@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Barak A. Pearlmutter <bap@debian.org>
 Uploaders: Mahyuddin Susanto <udienz@ubuntu.com>,
 	   Bjoern Erik Nilsen <bjoern.nilsen@bjoernen.com>
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper-compat (= 13),
 	pkg-config,
 	qtbase5-dev, qttools5-dev-tools,
 	qtmultimedia5-dev,
