@@ -2,8 +2,11 @@ stopmotion (0.8.5-3) unstable; urgency=medium
 
   * bump policy, no changes required
   * bump to debhelper 13
+  * Fix day-of-week for changelog entry 0.pre3.4-1
+  * Add pithy comment to debian/watch
+  * stop quoting %s in mimecap entry
 
- -- Barak A. Pearlmutter <bap@debian.org>  Mon, 07 Sep 2020 07:59:58 +0100
+ -- Barak A. Pearlmutter <bap@debian.org>  Sun, 21 Mar 2021 19:33:07 +0000
 
 stopmotion (0.8.5-2) unstable; urgency=medium
 
