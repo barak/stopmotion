@@ -2,3 +2,7 @@ version=4
 opts="mode=git, pgpmode=none" \
  https://git.code.sf.net/p/linuxstopmotion/code \
  refs/tags/v?([\d\.]+) debian uupdate
+
+## Would use
+##   refs/tags/v?@ANY_VERSION@
+## but that matches things like 0.8.6-RC1.
