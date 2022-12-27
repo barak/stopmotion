@@ -18,9 +18,11 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 #include "logger.h"
-#include "qapplication.h"
 
+#include <stdarg.h>
 #include <qdebug.h>
+#include <qstring.h>
+#include <QtCore/qglobal.h>
 
 Logger Logger::get() {
 	return logger;
@@ -31,7 +33,7 @@ void Logger::logDebug(const char * msg, ...) {
 	va_list ap;
 	va_start(ap, msg);
 	QString qsm;
-	qsm.vsprintf(msg, ap);
+	qsm.vasprintf(msg, ap);
 	va_end(ap);
 	QDebug qdebug(QtDebugMsg);
 	qdebug << qsm;
@@ -45,7 +47,7 @@ void Logger::logWarning(const char * msg, ...) {
 	va_list ap;
 	va_start(ap, msg);
 	QString qsm;
-	qsm.vsprintf(msg, ap);
+	qsm.vasprintf(msg, ap);
 	va_end(ap);
 	QDebug qdebug(QtWarningMsg);
 	qdebug << qsm;
@@ -55,7 +57,7 @@ void Logger::logFatal(const char * msg, ...) {
 	va_list ap;
 	va_start(ap, msg);
 	QString qsm;
-	qsm.vsprintf(msg, ap);
+	qsm.vasprintf(msg, ap);
 	va_end(ap);
 	QDebug qdebug(QtFatalMsg);
 	qdebug << qsm;

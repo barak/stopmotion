@@ -400,7 +400,7 @@
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp" line="143"/>
-        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This lists shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This list shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Sonidos&lt;/h4&gt; &lt;p&gt;Esta lista muestra todos los sonidos conectados con este cuadro.&lt;/p&gt;&lt;p&gt;Estos sonidos se empezarán a reproducir cuando se muestre este cuadro, y hasta que finalicen.&lt;/p&gt;</translation>
     </message>
 </context>
@@ -734,7 +734,7 @@ This can be set in the preferences menu.</source>
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/mainwindowgui.cpp" line="736"/>
-        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the numberof the currently selected frame&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the number of the currently selected frame&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Número de cuadro&lt;/h4&gt;&lt;p&gt;Este área muestra el número del cuadro seleccionado actualmente.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -873,7 +873,7 @@ This can be set in the preferences menu.</source>
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/mainwindowgui.cpp" line="696"/>
-        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will opens a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will open a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Configurar Stopmotion&lt;/h4&gt; &lt;p&gt;Esto abre una ventana en donde puede &lt;em&gt;configurar&lt;/em&gt; Stopmotion con varios dispositivos de entrada y salida.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -1323,7 +1323,7 @@ values exists. Do you want to use this one? (Your old preferences
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/toolsmenu.cpp" line="330"/>
-        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinetly.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinitely.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Bucle de animación (CTRL+L)&lt;/h4&gt; &lt;p&gt;Con este botón puede determinar si la animación se reproduce una vez hasta el final, o si se reproduce una y otra vez indefinidamente.&lt;/p&gt;</translation>
     </message>
     <message>

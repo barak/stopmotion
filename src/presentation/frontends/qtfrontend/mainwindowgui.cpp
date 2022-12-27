@@ -19,6 +19,7 @@
  ***************************************************************************/
 #include "mainwindowgui.h"
 
+#include "logger.h"
 #include "src/presentation/frontends/qtfrontend/framebar/framebar.h"
 #include "src/presentation/frontends/qtfrontend/frameview.h"
 #include "src/presentation/frontends/qtfrontend/flexiblespinbox.h"
@@ -30,7 +31,6 @@
 #include "src/application/soundhandler.h"
 #include "src/presentation/frontends/qtfrontend/framepreferencesmenu.h"
 #include "src/presentation/frontends/qtfrontend/preferencesmenu.h"
-#include "src/presentation/frontends/qtfrontend/toolsmenu.h"
 #include "src/domain/domainfacade.h"
 #include "src/foundation/preferencestool.h"
 #include "src/technical/video/videoencoder.h"
@@ -66,9 +66,12 @@
 #include <QFileSystemWatcher>
 #include <QClipboard>
 
-#include <cstdlib>
+#include <assert.h>
+#include <string.h>
 #include <unistd.h>
+#include <cstdlib>
 #include <sstream>
+#include <string>
 
 using namespace std;
 using namespace Qt;
@@ -682,7 +685,7 @@ void MainWindowGUI::retranslateHelpText()
 
 	infoText =
 			tr("<h4>Configure Stopmotion</h4> "
-			"<p>This will opens a window where you can <em>configure</em> "
+			"<p>This will open a window where you can <em>configure</em> "
 			"Stopmotion with various input and output devices.</p>");
 	configureAct->setWhatsThis(infoText);
 	infoText =
@@ -721,7 +724,7 @@ void MainWindowGUI::retranslateHelpText()
 
 	//Other widgets
 	infoText =
-			tr("<h4>Frame number</h4><p>This area displays the number"
+			tr("<h4>Frame number</h4><p>This area displays the number "
 			"of the currently selected frame</p>");
 	numberDisplay->setToolTip(infoText );
 	numberDisplay->setWhatsThis(infoText );
@@ -902,7 +905,7 @@ void MainWindowGUI::exportToVideo()
 			   "menu. Export to video will not be possible until you\n"
 			   "have set an encoder to use. Do you want to set it now?"),
 			tr("&Yes"), tr("&No"), // button 0, button 1, ...
-			QString::null, 0, 1 );
+			QString(), 0, 1 );
 		if (ret == 0) {
 			showPreferencesMenu();
 		}
@@ -952,7 +955,7 @@ void MainWindowGUI::exportToVideo()
 					tr("The registered encoder is not valid. Do you want\n"
 					"to check your settings in the preferences menu?"),
 					tr("&Yes"), tr("&No"), // button 0, button 1, ...
-					QString::null, 0, 1 );
+					QString(), 0, 1 );
 			if (ret == 0) {
 				showPreferencesMenu();
 			}

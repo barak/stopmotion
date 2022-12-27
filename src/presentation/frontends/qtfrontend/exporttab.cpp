@@ -19,6 +19,10 @@
  ***************************************************************************/
 #include "src/presentation/frontends/qtfrontend/exporttab.h"
 
+#include <stdlib.h>
+#include <algorithm>
+#include <memory>
+
 #include "graphics/icons/close.xpm"
 #include "flexiblelineedit.h"
 #include "src/foundation/preferencestool.h"
@@ -151,22 +155,22 @@ void ExportTab::makeGUI()
 	setLayout(mainLayout);
 
 	QGridLayout *encoderPrefsLayout = new QGridLayout;
-	encoderPrefsLayout->addWidget(closeButton, 0, 2, 0);
-	encoderPrefsLayout->addWidget(askForOutput, 0, 0, 1, 2, 0);
+	encoderPrefsLayout->addWidget(closeButton, 0, 2);
+	encoderPrefsLayout->addWidget(askForOutput, 0, 0, 1, 2);
 	QHBoxLayout* hbLayout = new QHBoxLayout;
 	hbLayout->addWidget(yesButton);
 	hbLayout->addWidget(noButton);
 	hbLayout->addStretch(1);
-	encoderPrefsLayout->addLayout(hbLayout, 1, 1, 0);
-	encoderPrefsLayout->addWidget(defaultOutputLabel, 2, 0, 0);
+	encoderPrefsLayout->addLayout(hbLayout, 1, 1);
+	encoderPrefsLayout->addWidget(defaultOutputLabel, 2, 0);
 	hbLayout = new QHBoxLayout;
 	hbLayout->addWidget(defaultOutput);
 	hbLayout->addWidget(browseButton);
-	encoderPrefsLayout->addLayout(hbLayout, 2, 1, 1, 2, 0);
-	encoderPrefsLayout->addWidget(startEncoderLabel, 3, 0, 0);
-	encoderPrefsLayout->addWidget(startEncoder, 3, 1, 1, 2, 0);
-	encoderPrefsLayout->addWidget(stopEncoderLabel, 4, 0, 0);
-	encoderPrefsLayout->addWidget(stopEncoder, 4, 1, 1, 2, 0);
+	encoderPrefsLayout->addLayout(hbLayout, 2, 1, 1, 2);
+	encoderPrefsLayout->addWidget(startEncoderLabel, 3, 0);
+	encoderPrefsLayout->addWidget(startEncoder, 3, 1, 1, 2);
+	encoderPrefsLayout->addWidget(stopEncoderLabel, 4, 0);
+	encoderPrefsLayout->addWidget(stopEncoder, 4, 1, 1, 2);
 	encoderPrefs->setLayout(encoderPrefsLayout);
 }
 

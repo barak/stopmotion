@@ -20,11 +20,14 @@
 #ifndef OGGVORBIS_H
 #define OGGVORBIS_H
 
-#include "audioformat.h"
+#include <stdint.h>
 
 #include <vorbis/vorbisfile.h>
+
+#include "audioformat.h"
 #include "src/domain/animation/workspacefile.h"
-#include "src/domain/animation/errorhandler.h"
+
+class ErrorHandler;
 
 /**
  * Class for decoding of oggvorbis data to raw PCM data.
@@ -56,7 +59,7 @@ private:
 	/** The ogg representation of the file registered in this class. */
 	OggVorbis_File *oggFile;
 
-	/** The filename registred in this class. Hopefully a valid ogg file. */
+	/** The filename registered in this class. Hopefully a valid ogg file. */
 	WorkspaceFile filename;
 	enum {
 		littleEndian = 0,

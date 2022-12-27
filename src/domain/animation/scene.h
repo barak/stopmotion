@@ -21,12 +21,14 @@
 #define SCENE_H
 
 #include "src/config.h"
-#include "frame.h"
-#include "src/presentation/frontends/frontend.h"
 
 #include <exception>
+#include <vector>
 
 class FileNameVisitor;
+class Frame;
+class Sound;
+class WorkspaceFile;
 
 class FrameOutOfRangeException : public std::exception {
 public:
@@ -74,7 +76,7 @@ public:
 	/**
 	 * Removes frames from the animation.
 	 * @param frame The index from which to begin removing.
-	 * @param cound The number of frames to remove.
+	 * @param count The number of frames to remove.
 	 * @param [out] out The removed frames.
 	 */
 	void removeFrames(int frame, int count,

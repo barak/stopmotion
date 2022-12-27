@@ -400,7 +400,7 @@
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp" line="143"/>
-        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This lists shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This list shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Sons&lt;/h4&gt; &lt;p&gt;Esta lista mostra todos os sons ligados a esta imagem.&lt;/p&gt;&lt;p&gt;Os sons vão começar de ser tocados quando esta imagem será mostrada e continuarão até ao fim.&lt;/p&gt;</translation>
     </message>
 </context>
@@ -818,7 +818,7 @@ utilizar. Isto pode ser feito nas preferências.</translation>
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/mainwindowgui.cpp" line="696"/>
-        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will opens a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will open a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Configurar Stopmotion&lt;/h4&gt; &lt;p&gt;Isto vai abrir uma janela onde poderá &lt;em&gt;configurar&lt;/em&gt; Stopmotion com vários dispositivos de gravação.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -858,7 +858,7 @@ utilizar. Isto pode ser feito nas preferências.</translation>
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/mainwindowgui.cpp" line="736"/>
-        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the numberof the currently selected frame&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the number of the currently selected frame&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Quantia de imagens&lt;/h4&gt;&lt;p&gt;Esta zona indica quantas imagens estão seleccionadas&lt;/p&gt;</translation>
     </message>
     <message>
@@ -1343,7 +1343,7 @@ será guardado em ~/.stopmotion/preferences.xml.OLD)</translation>
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/toolsmenu.cpp" line="330"/>
-        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinetly.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinitely.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Repetir a animação (CTRL+L)&lt;/h4&gt; &lt;p&gt;Com este botão pode escolher se quer que a animação seja lida até ao fim, ou repetida indefinidamente.&lt;/p&gt;</translation>
     </message>
     <message>

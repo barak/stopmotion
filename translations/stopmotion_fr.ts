@@ -415,7 +415,7 @@
     </message>
     <message>
         <location line="+8"/>
-        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This lists shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This list shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Sons&lt;/h4&gt; &lt;p&gt;Ceci affiche une une liste de  tous les sons associés à cette image.&lt;/p&gt;&lt;p&gt;Les sons sont joués quand cette image apparait et jusqu&apos;à ce ce qu&apos;ils soient terminés.&lt;/p&gt;</translation>
     </message>
 </context>
@@ -825,7 +825,7 @@ Ceci peut être fait dans la fenêtre de préférences.</translation>
     </message>
     <message>
         <location line="+212"/>
-        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the numberof the currently selected frame&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the number of the currently selected frame&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Numéro d&apos;image&lt;/h4&gt;&lt;p&gt;Cette zone affiche le numéro de l&apos;image actuellement sélectionnée&lt;/p&gt;</translation>
     </message>
     <message>
@@ -984,7 +984,7 @@ Ceci peut être fait dans la fenêtre de préférences.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will opens a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will open a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Configurer Stopmotion&lt;/h4&gt; &lt;p&gt;Ceci ouvre une fenêtre où vous pouvez &lt;em&gt;configurer&lt;/em&gt; Stopmotion ainsi que les périphériques d&apos;entrée et de sortie.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -1455,7 +1455,7 @@ Voulez-vous utiliser ce fichier ? ( Votre précédent fichier de préférences
     </message>
     <message>
         <location line="+4"/>
-        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinetly.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinitely.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Lecture de l&apos;animation en boucle (CTRL+L)&lt;/h4&gt; &lt;p&gt;Avec ce bouton vous pouvez choisir de lire l&apos;animation en boucle infinie plutôt que de la lire une seule fois jusqu&apos;à fin.&lt;/p&gt;</translation>
     </message>
     <message>

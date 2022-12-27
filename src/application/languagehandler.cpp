@@ -17,18 +17,20 @@
  *   Free Software Foundation, Inc.,                                       *
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
-#include "src/application/languagehandler.h"
+#include "languagehandler.h"
 
+#include "logger.h"
 #include "src/foundation/preferencestool.h"
 #include "src/config.h"
 
+#include <assert.h>
+#include <QDebug>
 #include <QDir>
 #include <QTranslator>
 #include <QLocale>
 #include <QLatin1String>
 
 
-#include <QDebug>
 LanguageHandler::LanguageHandler(QObject *parent, QApplication *stApp, const char *name) 
 		: QObject(parent), languagesMenu(0) {
 	qmPath = QString(stopmotion::translationsDirectory);
@@ -108,8 +110,8 @@ QMenu* LanguageHandler::createLanguagesMenu(QMenu *parent)
 			"Example: English = Deutsch (Deutsch is \"German\" "
 			"in German)");
 
-		// Checks that the mimimum requirement for accepting a string is covered.
-		// The mimimum requirement is that the menu option string (English) is translated.
+		// Checks that the minimum requirement for accepting a string is covered.
+		// The minimum requirement is that the menu option string (English) is translated.
 		if (language != "") {
 			langAct = languagesMenu->addAction(QString("&%1 %2").arg(num++).arg(language));
 			langAct->setCheckable(true);

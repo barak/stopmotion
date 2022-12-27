@@ -19,11 +19,12 @@
  ***************************************************************************/
 #include "qtfrontend.h"
 
+#include "frontends/frontend.h"
 #include "src/application/externalcommand.h"
 #include "src/presentation/frontends/qtfrontend/mainwindowgui.h"
 #include "src/foundation/preferencestool.h"
 #include "src/foundation/logger.h"
-#include "src/technical/util.h"
+#include "src/foundation/uiexception.h"
 #include "src/domain/animation/workspacefile.h"
 #include "src/domain/domainfacade.h"
 
@@ -37,10 +38,9 @@
 
 #include <cstring>
 #include <unistd.h>
-#include <sstream>
 #include <stdio.h>
-#include <errno.h>
 #include <assert.h>
+#include <string>
 
 const char* QtFrontend::VERSION = "0.8";
 
@@ -413,7 +413,7 @@ void QtFrontend::handleException(UiException& e) {
 	}
 	if (unhandled) {
 		QMessageBox::critical(0,
-				tr("Stopmotion threw and exception it could not handle."),
+				tr("Stopmotion threw an exception it could not handle."),
 				tr("Please raise a bug report."));
 		throw CriticalError();
 	}

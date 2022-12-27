@@ -400,7 +400,7 @@
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp" line="143"/>
-        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This lists shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This list shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;&lt;h4&gt;الأصوات&lt;/h4&gt; &lt;p&gt;هذه القائمة تظهر كل الأصوات المرتبطة بهذا الإطار.&lt;/p&gt;&lt;p&gt;سيبدأ تشغيل الصوت مع ظهور هذا الإطار وسيستمر حتى إنتهاءه.&lt;/p&gt;</translation>
     </message>
 </context>
@@ -744,7 +744,7 @@ This can be set in the preferences menu.</source>
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/mainwindowgui.cpp" line="736"/>
-        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the numberof the currently selected frame&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the number of the currently selected frame&lt;/p&gt;</source>
         <translation>&lt;h4&gt;رقم الإطار&lt;/h4&gt;&lt;p&gt;تظهر هذه المنطقة رقم الإطار المُعيَّن&lt;/p&gt;</translation>
     </message>
     <message>
@@ -887,7 +887,7 @@ This can be set in the preferences menu.</source>
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/mainwindowgui.cpp" line="696"/>
-        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will opens a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will open a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;اضبط Stopmotion&lt;/h4&gt;&lt;p&gt;يفتح هذا نافذة يمكن فيها ضبط Stopmotion للعمل مع نبائط إدخال و إخراج متعددة&lt;/p&gt;</translation>
     </message>
     <message>
@@ -1344,7 +1344,7 @@ values exists. Do you want to use this one? (Your old preferences
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/toolsmenu.cpp" line="330"/>
-        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinetly.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinitely.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;كرّر التحريك (CTRL+L)&lt;/h4&gt; &lt;p&gt;بهذا الزر يمكنك اختيار ما إن كنت تريد تشغيل التحريك مرة أم تريد تكراره بلا توقف.&lt;/p&gt;</translation>
     </message>
     <message>

@@ -400,7 +400,7 @@
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp" line="143"/>
-        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This lists shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This list shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;צלילים&lt;/h4&gt; &lt;p&gt;רשימה זו מציגה את כל הצלילים הקשורים בשקופית זו.&lt;/p&gt;&lt;p&gt;הצלילים יתחילו לנגן עם הופעת שקופית זו והם יעצרו עם סיומם.&lt;/p&gt;</translation>
     </message>
 </context>
@@ -735,7 +735,7 @@ This can be set in the preferences menu.</source>
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/mainwindowgui.cpp" line="736"/>
-        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the numberof the currently selected frame&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the number of the currently selected frame&lt;/p&gt;</source>
         <translation>&lt;h4&gt;מספר השקופית&lt;/h4&gt;&lt;p&gt;אזור זה מציג את מספר השקופית הנוכחית שנבחרה.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -874,7 +874,7 @@ This can be set in the preferences menu.</source>
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/mainwindowgui.cpp" line="696"/>
-        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will opens a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will open a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;הגדרת Stopmotion&lt;/h4&gt; &lt;p&gt;פעולה זו תפתח חלון בו תוכל &lt;em&gt;להגדיר&lt;/em&gt; את Stopmotion עם התקני פלט וקלט שונים.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -1329,7 +1329,7 @@ values exists. Do you want to use this one? (Your old preferences
     </message>
     <message>
         <location filename="../src/presentation/frontends/qtfrontend/toolsmenu.cpp" line="330"/>
-        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinetly.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinitely.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;נגינת ההנפשה במחזוריות (CTRL+ L)&lt;/h4&gt; &lt;p&gt;באמצעות לחצן זה תוכל להגדיר האם ברצונך לנגן את ההנפשה עד סופה, או לנגן אותה במחזוריות.&lt;/p&gt;</translation>
     </message>
     <message>

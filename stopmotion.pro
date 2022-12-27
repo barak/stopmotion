@@ -1,3 +1,6 @@
+# print deprecation warning
+message("qmake support is deprecated and will be removed after Linux Stopmotion 0.8.6. Use CMake instead.")
+
 QT += widgets multimedia
 CONFIG += debug_and_release
 HEADERS += src/domain/undo/filelogger.h \
@@ -315,4 +318,4 @@ lrelease.CONFIG  += no_link target_predeps
 
 # Build and run tests with make test
 QMAKE_EXTRA_TARGETS += test
-test.commands = cd src/test && $(QMAKE) && make test
+test.commands = cd src/test && $(QMAKE) -spec $$QMAKESPEC && make test

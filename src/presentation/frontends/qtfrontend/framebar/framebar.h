@@ -27,7 +27,6 @@
 
 #include <vector>
 
-class Frame;
 class ThumbView;
 class FramePreferencesMenu;
 
@@ -35,7 +34,9 @@ class QWidget;
 class QDragEnterEvent;
 class QDragMoveEvent;
 class QDropEvent;
+class QObject;
 class QResizeEvent;
+class QTimer;
 
 /**
  * The framebar widget for viewing the animation model.
@@ -80,14 +81,14 @@ public:
 	void updateClear();
 
 	/**
-	 * Function to recieve notification when a new scene is added to the
+	 * Function to receive notification when a new scene is added to the
 	 * model.
 	 * @param index the index of the new scene.
 	 */
 	void updateNewScene(int index);
 
 	/**
-	 * Function to recieve notification when a scene is removed from
+	 * Function to receive notification when a scene is removed from
 	 * the model.
 	 * @param sceneNumber the scene which has been removed from the model.
 	 */
@@ -120,7 +121,7 @@ public:
 	void updateAnimationChanged(int sceneNumber, int frameNumber);
 
 	/**
-	 * Upadates the framebar when the sounds attached to the specified frame
+	 * Updates the framebar when the sounds attached to the specified frame
 	 * change.
 	 * @param sceneNumber The scene to which the changed frame belongs.
 	 * @param frameNumber The frame number within the scene
@@ -232,7 +233,7 @@ public slots:
 
 signals:
 	//The signals in the framebar is used for signaling small widget,
-	//who are deemed to unsignificant to be observers, of changes in
+	//who are deemed to insignificant to be observers, of changes in
 	//the framebar/model. A bit hacky and should be in it's own widget.
 	void newActiveFrame( const QString & );
 	void newActiveFrame(int scene, int frame);
@@ -263,7 +264,7 @@ private:
 	 */
 	int activeSceneSize;
 
-	/** The scene which are being moved when draging a scene */
+	/** The scene which are being moved when dragging a scene */
 	int movingScene;
 
 	/**
@@ -375,7 +376,7 @@ private:
 	 */
 	ThumbView* getSceneThumb(int index, bool fix = false);
 
-	/** Sets the size of the frame bar to accomodate all the thumbnails. */
+	/** Sets the size of the frame bar to accommodate all the thumbnails. */
 	void fixSize();
 	/** Deletes all the thumbnails. */
 	void clear();

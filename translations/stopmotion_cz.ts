@@ -415,7 +415,7 @@
     </message>
     <message>
         <location line="+8"/>
-        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This lists shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Sounds&lt;/h4&gt; &lt;p&gt;This list shows all the sounds connected to this frame.&lt;/p&gt;&lt;p&gt;The sounds will begin playing when this frame is shown and play until they are done.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Zvuky&lt;/h4&gt;&lt;p&gt;V tomto seznamu jsou všechny zvuky přidané k tomuto rámu.&lt;/p&gt;&lt;p&gt;Zvuk se začne přehrávat ve chvíli zobrazení tohoto rámu.&lt;/p&gt;</translation>
     </message>
 </context>
@@ -906,7 +906,7 @@ chcete používat.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will opens a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Configure Stopmotion&lt;/h4&gt; &lt;p&gt;This will open a window where you can &lt;em&gt;configure&lt;/em&gt; Stopmotion with various input and output devices.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Nastavení Stopmotion&lt;/h4&gt; &lt;p&gt;Otevře okno, kde můžete konfigurovat vstup/výstup.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -946,7 +946,7 @@ chcete používat.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the numberof the currently selected frame&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Frame number&lt;/h4&gt;&lt;p&gt;This area displays the number of the currently selected frame&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Číslo rámu&lt;/h4&gt;&lt;p&gt;Zde se zobrazuje číslo (pořadí) právě vybraného rámu.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -1459,7 +1459,7 @@ values exists. Do you want to use this one? (Your old preferences
     </message>
     <message>
         <location line="+4"/>
-        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinetly.&lt;/p&gt;</source>
+        <source>&lt;h4&gt;Loop animation (CTRL+L)&lt;/h4&gt; &lt;p&gt;With this button you can set whether you want the animation to play to the end, or to loop indefinitely.&lt;/p&gt;</source>
         <translation>&lt;h4&gt;Přehrávat dokola&lt;/h4&gt;&lt;p&gt;Můžete určit, jestli se má animace přehrát jen jednou nebo stále opakovat dokola.&lt;/p&gt;</translation>
     </message>
     <message>

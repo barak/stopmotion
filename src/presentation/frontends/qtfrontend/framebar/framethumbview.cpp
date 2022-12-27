@@ -19,10 +19,12 @@
  ***************************************************************************/
 #include "framethumbview.h"
 
+#include "framebar.h"
+#include "logger.h"
 #include "thumbdragger.h"
+#include "thumbview.h"
 #include "filenamesfromurlsiterator.h"
 #include "src/domain/domainfacade.h"
-#include "src/technical/stringiterator.h"
 #include "graphics/icons/note.xpm"
 
 #include <QApplication>
@@ -36,6 +38,8 @@
 #include <QMimeData>
 #include <QList>
 #include <QUrl>
+
+class QWidget;
 
 
 FrameThumbView::FrameThumbView(FrameBar *frameBar, QWidget *parent, int number,
@@ -152,10 +156,13 @@ void FrameThumbView::startDrag() {
 
 	mimeData->setUrls(urls);
 	drag->setMimeData(mimeData);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+	drag->setPixmap(pixmap(Qt::ReturnByValue));
+#else
 	drag->setPixmap(*pixmap());
+#endif
 
-	//Qt::DropAction dropAction = drag->start(Qt::CopyAction | Qt::MoveAction);
-	drag->start(Qt::MoveAction);
+	drag->exec(Qt::MoveAction);
 }
 
 

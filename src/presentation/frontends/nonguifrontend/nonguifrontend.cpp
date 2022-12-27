@@ -19,14 +19,15 @@
  ***************************************************************************/
 #include "nonguifrontend.h"
 
+#include "domainfacade.h"
+#include "frontends/frontend.h"
+#include "uiexception.h"
 #include "src/technical/stringiterator.h"
 
 #include <stdio.h>
-#include <unistd.h>
 #include <getopt.h>
 #include <stdlib.h>
 #include <dirent.h>
-#include <sys/types.h>
 #include <sys/stat.h>
 #include <errno.h>
 #include <string>
@@ -205,7 +206,7 @@ void NonGUIFrontend::addFrames(const char *directory) {
 
 
 void NonGUIFrontend::save(const char *directory) {
-	// returns a absoulte path which is allocated with new[]
+	// returns a absolute path which is allocated with new[]
 	std::string dir;
 	getAbsolutePath(dir, directory);
 	facadePtr->saveProject(dir.c_str());

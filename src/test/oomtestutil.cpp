@@ -20,8 +20,6 @@
 
 #include <dlfcn.h>
 #include <assert.h>
-#include <cerrno>
-#include <new>
 
 #include "oomtestutil.h"
 
@@ -43,7 +41,7 @@ int fflush(FILE* fh);
 size_t fread(void *out, size_t s, size_t n, FILE *fh);
 size_t fwrite(const void *in, size_t s, size_t n, FILE *fh);
 int access(const char *name, int type);
-int ferror(FILE* fh);
+int ferror(FILE* fh) throw();
 int unlink(const char *name);
 char *getenv(const char *name);
 }
@@ -135,7 +133,7 @@ public:
 	int access(const char *name, int type) {
 		return raccess(name, type);
 	}
-	int ferror(FILE* fh) {
+	int ferror(FILE* fh) throw() {
 		return rferror(fh);
 	}
 	int unlink(const char *name) {
@@ -227,7 +225,7 @@ int access(const char *name, int type) {
 	return getFileSystem()->access(name, type);
 }
 
-int ferror(FILE* fh) {
+int ferror(FILE* fh) throw() {
 	return getFileSystem()->ferror(fh);
 }
 
