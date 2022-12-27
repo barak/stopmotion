@@ -3,10 +3,8 @@ Upstream-Name: linuxstopmotion
 Source:
     Earliest sources downloaded from
      http://developer.skolelinux.no/info/studentgrupper/2005-hig-stopmotion
-    Current upstream development repository is
-     https://git.code.sf.net/p/linuxstopmotion/code
-    There is a fork used for upstreaming debian patches at
-     https://git.code.sf.net/u/bpearlmutter/linuxstopmotion
+    Current upstream development
+     https://invent.kde.org/multimedia/stopmotion
 
 Files: *
 Copyright:
