@@ -1,0 +1,35 @@
+From: "Barak A. Pearlmutter" <barak+git@pearlmutter.net>
+Date: Tue, 27 Dec 2022 10:30:36 +0000
+Subject: pkg-config
+
+xml2-config is obsolete; scripts should use pkg-config instead.
+See 02f73410 78d0f621.
+---
+ src/test/test.pro | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/src/test/test.pro b/src/test/test.pro
+index 1afe5ac..fd91ffc 100644
+--- a/src/test/test.pro
++++ b/src/test/test.pro
+@@ -99,7 +99,8 @@ SOURCES += \
+ FORMS +=
+ RESOURCES +=
+ INCLUDEPATH += ../.. \
+-    $$system(xml2-config --cflags | sed -e 's/-I//g')
++    $$system(pkg-config libxml-2.0 --cflags | sed -e 's/-I//g') \
++    $$system(pkg-config vorbisfile --cflags | sed -e 's/-I//g' )
+ oomteststub.target = oomteststub.o
+ oomteststub.commands = make -f oomtestutil.mak oomteststub.o
+ oomteststub.depends = oomteststub.cpp oomtestutil.h
+@@ -110,8 +111,8 @@ QMAKE_EXTRA_TARGETS += oomtestutil oomteststub test
+ QMAKE_CLEAN += oomteststub.o oomtestutil.so
+ PRE_TARGETDEPS = oomteststub.o
+ LIBS += oomteststub.o -ldl \
+-	$$system(xml2-config --libs) \
+-	-ltar -lvorbisfile
++	$$system(pkg-config libxml-2.0 --libs) \
++	-ltar $$system(pkg-config vorbisfile --libs)
+ DESTDIR=.
+ release:OBJECTS_DIR=build/release
+ release:TARGET = test
