@@ -5,3 +5,6 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
 	dh $@
+
+execute_before_dh_auto_test:
+	$(MAKE) -C obj-* test-stopmotion
