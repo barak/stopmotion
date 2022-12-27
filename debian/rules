@@ -8,3 +8,7 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 execute_before_dh_auto_test:
 	$(MAKE) -C obj-* test-stopmotion
+
+execute_after_dh_installmime:
+	mkdir -p debian/stopmotion/usr/lib/mime/packages
+	cp stopmotion.mime debian/stopmotion/usr/lib/mime/packages/stopmotion

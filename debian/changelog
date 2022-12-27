@@ -1,4 +1,4 @@
-stopmotion (0.8.6-1) UNRELEASED; urgency=medium
+stopmotion (0.8.6-1) unstable; urgency=medium
 
   * upstream development repostory has moved; update pointers
   * new upstream release
@@ -8,8 +8,13 @@ stopmotion (0.8.6-1) UNRELEASED; urgency=medium
   * Update standards version to 4.6.2, no changes needed.
   * Build test executable before test
   * Patch spelling errors
+  * update documentation location
+  * delete mime file as it has been upstreamed
+    - install upstream mime file
+  * delete *.manpages as upstream installs stopmotion.1
+  * delete stopmotion.install as upstream installs all this stuff
 
- -- Barak A. Pearlmutter <bap@debian.org>  Tue, 27 Dec 2022 15:20:08 +0000
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 27 Dec 2022 15:41:14 +0000
 
 stopmotion (0.8.5-4) unstable; urgency=medium
 
