@@ -5,6 +5,7 @@ stopmotion (0.8.6-1) UNRELEASED; urgency=medium
   * move xml2-config to pkg-config fix into quilt patch
   * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
     Repository-Browse.
+  * Update standards version to 4.6.2, no changes needed.
 
  -- Barak A. Pearlmutter <bap@debian.org>  Tue, 27 Dec 2022 10:34:40 +0000
 
