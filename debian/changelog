@@ -1,3 +1,9 @@
+stopmotion (0.8.6-2) unstable; urgency=medium
+
+  * track upstream development which merged our quilt patches
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 28 Dec 2022 17:17:24 +0000
+
 stopmotion (0.8.6-1) unstable; urgency=medium
 
   * upstream development repostory has moved; update pointers
