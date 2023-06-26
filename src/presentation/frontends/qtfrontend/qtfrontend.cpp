@@ -33,6 +33,7 @@
 #include <QMessageBox>
 #include <QProgressDialog>
 #include <QProgressBar>
+#include <QRegularExpression>
 #include <QStatusBar>
 #include <QTimer>
 
@@ -46,10 +47,6 @@ const char* QtFrontend::VERSION = "0.8";
 
 QtFrontend::QtFrontend(int &argc, char **argv) {
 	stApp = new QApplication(argc, argv);
-
-#if QT_VERSION == 0x040400
-	stApp->setAttribute(Qt::AA_NativeWindows);
-#endif
 
 	mw = new MainWindowGUI(stApp);
 	mw->setWindowTitle("Stopmotion");
@@ -437,7 +434,7 @@ void QtFrontend::updateOldPreferences(PreferencesTool *prefs) {
 					std::string("$IMAGEFILE"));
 		}
 		QString s(start.c_str());
-		s.replace( QRegExp("/dev/(v4l/){0,1}video[0-9]{0,1}"),
+		s.replace( QRegularExpression("/dev/(v4l/){0,1}video[0-9]{0,1}"),
 				QString("$VIDEODEVICE") );
 		prefs->setPreference( QString("importstartdaemon%1")
 				.arg(i).toUtf8().constData(), s.toUtf8().constData());
@@ -451,7 +448,7 @@ void QtFrontend::updateOldPreferences(PreferencesTool *prefs) {
 					std::string("$IMAGEFILE"));
 		}
 		QString ss(prepoll.c_str());
-		ss.replace( QRegExp("/dev/(v4l/){0,1}video[0-9]{0,1}"), QString("$VIDEODEVICE") );
+		ss.replace( QRegularExpression("/dev/(v4l/){0,1}video[0-9]{0,1}"), QString("$VIDEODEVICE") );
 		prefs->setPreference( QString("importprepoll%1").arg(i).toUtf8().constData(), ss.toUtf8().constData());
 	}
 }

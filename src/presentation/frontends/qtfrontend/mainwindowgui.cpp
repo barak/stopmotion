@@ -62,7 +62,6 @@
 #include <QMessageBox>
 #include <QMimeData>
 #include <QWhatsThis>
-#include <QDesktopWidget>
 #include <QFileSystemWatcher>
 #include <QClipboard>
 
@@ -99,7 +98,7 @@ MainWindowGUI::MainWindowGUI(QApplication *stApp)
 	centerWidget->setObjectName("CenterWidget");
 	centerWidgetLayout = new QVBoxLayout;
 	centerWidgetLayout->setSpacing(5);
-	centerWidgetLayout->setMargin(0);
+	centerWidgetLayout->setContentsMargins(0, 0, 0, 0);
 
 	frameBar = new FrameBar;
 	centerWidgetLayout->addWidget(frameBar);
@@ -114,7 +113,7 @@ void MainWindowGUI::ConstructUI() {
 	centerWidgetLayout->addWidget(bottomWidget);
 	bottomWidgetLayout = new QVBoxLayout;
 	bottomWidgetLayout->setSpacing(0);
-	bottomWidgetLayout->setMargin(0);
+	bottomWidgetLayout->setContentsMargins(0, 0, 0, 0);
 	makePreferencesMenu(bottomWidgetLayout);
 	//Initializes and sets up the workarea consisting of the toolsmenu and the frameview.
 	workArea = new QWidget;
@@ -124,7 +123,7 @@ void MainWindowGUI::ConstructUI() {
 	workAreaLayout = new QHBoxLayout;
 	workAreaLayout->setObjectName("WorkAreaLayout");
 	workAreaLayout->setSpacing(5);
-	workAreaLayout->setMargin(0);
+	workAreaLayout->setContentsMargins(0, 0, 0, 0);
 	makeToolsMenu(workAreaLayout);
 	makeViews(workAreaLayout);
 	workArea->setLayout(workAreaLayout);
@@ -212,11 +211,11 @@ void MainWindowGUI::createAccelerators()
 	QShortcut *nextFrameAccel2 = new QShortcut(QKeySequence(Qt::Key_Right), this);
 	connect(nextFrameAccel2, SIGNAL(activated()), frameBar, SLOT(selectNextFrame()));
 	QShortcut *nextFrameSelectionAccel = new QShortcut(
-			QKeySequence(Qt::ShiftModifier + Qt::Key_L), this);
+			QKeySequence(Qt::ShiftModifier | Qt::Key_L), this);
 	connect(nextFrameSelectionAccel, SIGNAL(activated()),
 			frameBar, SLOT(moveSelectionToNextFrame()));
 	QShortcut *nextFrameSelectionAccel2 = new QShortcut(
-			QKeySequence(Qt::ShiftModifier + Qt::Key_Right), this);
+			QKeySequence(Qt::ShiftModifier | Qt::Key_Right), this);
 	connect(nextFrameSelectionAccel2, SIGNAL(activated()),
 			frameBar, SLOT(moveSelectionToNextFrame()));
 
@@ -225,11 +224,11 @@ void MainWindowGUI::createAccelerators()
 	QShortcut *previousFrameAccel2 = new QShortcut(QKeySequence(Qt::Key_Left), this );
 	connect(previousFrameAccel2, SIGNAL(activated()), frameBar, SLOT(selectPreviousFrame()));
 	QShortcut *previousFrameSelectionAccel = new QShortcut(
-			QKeySequence(Qt::ShiftModifier + Qt::Key_J), this);
+			QKeySequence(Qt::ShiftModifier | Qt::Key_J), this);
 	connect(previousFrameSelectionAccel, SIGNAL(activated()),
 			frameBar, SLOT(moveSelectionToPreviousFrame()));
 	QShortcut *previousFrameSelectionAccel2 = new QShortcut(
-			QKeySequence(Qt::ShiftModifier + Qt::Key_Left), this);
+			QKeySequence(Qt::ShiftModifier | Qt::Key_Left), this);
 	connect(previousFrameSelectionAccel2, SIGNAL(activated()),
 			frameBar, SLOT(moveSelectionToPreviousFrame()));
 
@@ -248,13 +247,13 @@ void MainWindowGUI::createAccelerators()
 	QShortcut *addFrameAccel = new QShortcut(QKeySequence(Qt::Key_F), this);
 	connect(addFrameAccel, SIGNAL(activated()), modelHandler, SLOT(chooseFrame()));
 
-	QShortcut *newSceneAccel = new QShortcut(QKeySequence(Qt::ControlModifier + Qt::Key_E), this);
+	QShortcut *newSceneAccel = new QShortcut(QKeySequence(Qt::ControlModifier | Qt::Key_E), this);
 	connect(newSceneAccel, SIGNAL(activated()), modelHandler, SLOT(newScene()));
 
 	QShortcut *removeFramesAccel = new QShortcut(QKeySequence(Qt::Key_Delete), this);
 	connect(removeFramesAccel, SIGNAL(activated()), modelHandler, SLOT(removeFrames()));
 
-	QShortcut *removeSceneAccel = new QShortcut(QKeySequence(Qt::ShiftModifier + Qt::Key_Delete), this);
+	QShortcut *removeSceneAccel = new QShortcut(QKeySequence(Qt::ShiftModifier | Qt::Key_Delete), this);
 	connect(removeSceneAccel, SIGNAL(activated()), modelHandler, SLOT(removeScene()));
 }
 
@@ -264,12 +263,12 @@ void MainWindowGUI::createActions()
 	//File menu
 	newAct = new QAction(this);
 	newAct->setIcon(QPixmap(filenewicon));
-	newAct->setShortcut(ControlModifier+Key_N);
+	newAct->setShortcut(QKeySequence(ControlModifier | Key_N));
 	connect(newAct, SIGNAL(triggered()), this, SLOT(newProject()));
 
 	openAct = new QAction(this);
 	openAct->setIcon(QPixmap(fileopenicon));
-	openAct->setShortcut(ControlModifier+Key_O);
+	openAct->setShortcut(QKeySequence(ControlModifier | Key_O));
 	connect(openAct, SIGNAL(triggered()), this, SLOT(openProject()));
 
 	mostRecentAct = new QAction(this);
@@ -286,72 +285,72 @@ void MainWindowGUI::createActions()
 
 	saveAct = new QAction(this);
 	saveAct->setIcon(QPixmap(filesaveasicon));
-	saveAct->setShortcut(ControlModifier+Key_S);
+	saveAct->setShortcut(QKeySequence(ControlModifier | Key_S));
 	connect(saveAct, SIGNAL(triggered()), this, SLOT(saveProject()));
 
 	saveAsAct = new QAction(this);
 	saveAsAct->setIcon(QPixmap(filesaveicon));
-	saveAsAct->setShortcut(ControlModifier+ShiftModifier+Key_S);
+	saveAsAct->setShortcut(QKeySequence(ControlModifier | ShiftModifier | Key_S));
 	connect(saveAsAct, SIGNAL(triggered()), this, SLOT(saveProjectAs()));
 
 	videoAct = new QAction(this);
-	videoAct->setShortcut(ControlModifier+ALT+Key_V);
+	videoAct->setShortcut(QKeySequence(ControlModifier | AltModifier | Key_V));
 	videoAct->setIcon(QPixmap(videoexport));
 	connect(videoAct, SIGNAL(triggered()), this, SLOT(exportToVideo()));
 
 	cinerellaAct = new QAction(this);
-	cinerellaAct->setShortcut(ControlModifier+ALT+Key_C);
+	cinerellaAct->setShortcut(QKeySequence(ControlModifier | AltModifier | Key_C));
 	cinerellaAct->setEnabled(false);
 	connect(cinerellaAct, SIGNAL(triggered()), this, SLOT(exportToCinerella()));
 
 	quitAct = new QAction(this);
 	quitAct->setIcon(QPixmap(quiticon));
-	quitAct->setShortcut(ControlModifier+Key_Q);
+	quitAct->setShortcut(QKeySequence(ControlModifier | Key_Q));
 	connect(quitAct, SIGNAL(triggered()), stApp, SLOT(quit()));
 
 	//Edit menu
 	undoAct = new QAction(this);
 	undoAct->setIcon(QPixmap(undoicon));
-	undoAct->setShortcut(ControlModifier+Key_Z);
+	undoAct->setShortcut(QKeySequence(ControlModifier | Key_Z));
 	connect(undoAct, SIGNAL(triggered()), editMenuHandler, SLOT(undo()));
 
 	redoAct = new QAction(this);
 	redoAct->setIcon(QPixmap(redoicon));
-	redoAct->setShortcut(ControlModifier+ShiftModifier+Key_Z);
+	redoAct->setShortcut(QKeySequence(ControlModifier | ShiftModifier | Key_Z));
 	connect(redoAct, SIGNAL(triggered()), editMenuHandler, SLOT(redo()));
 
 	cutAct = new QAction(this);
 	cutAct->setIcon(QPixmap(cuticon));
-	cutAct->setShortcut(ControlModifier+Key_X);
+	cutAct->setShortcut(QKeySequence(ControlModifier | Key_X));
 	connect(cutAct, SIGNAL(triggered()), editMenuHandler, SLOT(cut()));
 
 	copyAct = new QAction(this);
 	copyAct->setIcon(QPixmap(copyicon));
-	copyAct->setShortcut(ControlModifier+Key_C);
+	copyAct->setShortcut(QKeySequence(ControlModifier | Key_C));
 	connect(copyAct, SIGNAL(triggered()), editMenuHandler, SLOT(copy()));
 
 	pasteAct = new QAction(this);
 	pasteAct->setIcon(QPixmap(pasteicon));
-	pasteAct->setShortcut(ControlModifier+Key_V);
+	pasteAct->setShortcut(QKeySequence(ControlModifier | Key_V));
 	connect(pasteAct, SIGNAL(triggered()), editMenuHandler, SLOT(paste()));
 
 	gotoFrameAct = new QAction(this);
-	gotoFrameAct->setShortcut(ControlModifier+Key_G);
+	gotoFrameAct->setShortcut(QKeySequence(ControlModifier | Key_G));
 	connect(gotoFrameAct, SIGNAL(triggered()), gotoMenuWidget, SLOT(show()));
 
 	configureAct = new QAction(this);
 	configureAct->setIcon(QPixmap(configureicon));
-	configureAct->setShortcut(ControlModifier+Key_P);
+	configureAct->setShortcut(QKeySequence(ControlModifier | Key_P));
 	connect(configureAct, SIGNAL(triggered()), this, SLOT(showPreferencesMenu()));
 
 	//Help menu
 	whatsthisAct = new QAction(this);
 	whatsthisAct->setIcon(QPixmap(whatsthisicon));
-	whatsthisAct->setShortcut(ShiftModifier+Key_F1);
+	whatsthisAct->setShortcut(QKeySequence(ShiftModifier | Key_F1));
 	connect(whatsthisAct, SIGNAL(triggered()), this, SLOT(whatsThis()));
 
 	helpAct = new QAction(this);
-	helpAct->setShortcut(Key_F1);
+	helpAct->setShortcut(QKeySequence(Key_F1));
 	connect(helpAct, SIGNAL(triggered()), this, SLOT(showHelpDialog()));
 
 	aboutAct = new QAction(this);
@@ -424,7 +423,7 @@ void MainWindowGUI::makeGotoMenu(QVBoxLayout *layout)
 	gotoMenuWidget = new QWidget;
 	gotoMenuWidgetLayout = new QHBoxLayout;
 	gotoMenuWidgetLayout->setSpacing(5);
-	gotoMenuWidgetLayout->setMargin(0);
+	gotoMenuWidgetLayout->setContentsMargins(0, 0, 0, 0);
 
 	gotoFrameLabel = new QLabel;
 
@@ -462,7 +461,7 @@ void MainWindowGUI::makeStatusBar()
 {
 	numberDisplay = new QLabel;
 	numberDisplay->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
-	numberDisplay->setMargin(0);
+	numberDisplay->setContentsMargins(0, 0, 0, 0);
 	connect(frameBar, SIGNAL(newActiveFrame(const QString &)), numberDisplay, SLOT(setText(const QString &)));
 	this->statusBar()->addPermanentWidget(numberDisplay);
 }
@@ -1093,13 +1092,8 @@ void MainWindowGUI::showAboutDialog()
 void MainWindowGUI::showHelpDialog()
 {
 	HelpWindow *help = new HelpWindow(this);
-	if ( QApplication::desktop()->width() > 400 && QApplication::desktop()->height() > 500 ) {
-		help->move(40, 40);
-		help->show();
-	}
-	else {
-		help->showMaximized();
-	}
+	help->move(40, 40);
+	help->show();
 }
 
 
