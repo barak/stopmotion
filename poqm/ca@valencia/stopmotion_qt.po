@@ -1,13 +1,14 @@
 # Translation of stopmotion_qt.po to Catalan (Valencian)
-# Copyright (C) 2021 This_file_is_part_of_KDE
+# Copyright (C) 2021-2024 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2021.
+# SPDX-FileCopyrightText: 2023 Antoni Bella Pérez <antonibella5@yahoo.com>
+# Josep M. Ferrer <txemaq@gmail.com>, 2021, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: stopmotion\n"
-"PO-Revision-Date: 2021-11-04 18:42+0100\n"
+"PO-Revision-Date: 2024-01-30 14:30+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -17,7 +18,7 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/application/externalcommand.cpp:46
 msgctxt "ExternalCommand|"
@@ -748,7 +749,7 @@ msgstr "A&pega"
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:505
 msgctxt "MainWindowGUI|"
 msgid "&Go to frame"
-msgstr "&Ves al fotograma"
+msgstr "&Ves fins al fotograma"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:506
 msgctxt "MainWindowGUI|"
@@ -773,7 +774,7 @@ msgstr "Número de fotograma: "
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:514
 msgctxt "MainWindowGUI|"
 msgid "Go to frame:"
-msgstr "Ves al fotograma:"
+msgstr "Ves fins al fotograma:"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:571
 msgctxt "MainWindowGUI|"
@@ -902,8 +903,8 @@ msgid ""
 "<h4>Copy</h4> <p><em>Copies</em> the selected frames to the clipboard. You "
 "can then paste them in another place.</p>"
 msgstr ""
-"<h4>Copia</h4> <p><em>Copia</em> els fotogrames seleccionats al porta-"
-"retalls. Després els podreu apegar en un altre lloc.</p>"
+"<h4>Copia</h4> <p><em>Copia</em> els fotogrames seleccionats a dins del "
+"porta-retalls. Després els podreu apegar en un altre lloc.</p>"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:663
 msgctxt "MainWindowGUI|"
@@ -919,7 +920,7 @@ msgid ""
 "</p>"
 msgstr ""
 "<h4>Apega</h4> <p><em>Apega</em> els fotogrames que estan actualment en el "
-"porta-retalls a la ubicació seleccionada.</p> <p>Podeu copiar/retallar "
+"porta-retalls en la ubicació seleccionada.</p> <p>Podeu copiar/retallar "
 "imatges des d'altres programes i després utilitzar esta opció per a apegar-"
 "los en esta animació.</p>"
 
@@ -934,13 +935,13 @@ msgid ""
 "<h4>Go to frame</h4> <p>This will bring up a popup-menu at the bottom where "
 "you can choose a frame you want to <em>go to</em>.</p>"
 msgstr ""
-"<h4>Ves al fotograma</h4> <p>Açò obrirà un menú emergent a la part inferior "
-"a on podreu triar un fotograma al que vulgueu <em>anar-hi</em>.</p>"
+"<h4>Ves fins al fotograma</h4> <p>Açò obrirà un menú emergent a la part "
+"inferior a on podreu triar un fotograma al qual vulgueu <em>anar-hi</em>.</p>"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:682
 msgctxt "MainWindowGUI|"
 msgid "Go to frame"
-msgstr "Ves al fotograma"
+msgstr "Ves fins al fotograma"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:686
 msgctxt "MainWindowGUI|"
@@ -1017,7 +1018,7 @@ msgid ""
 msgstr ""
 "<h4>Vista de fotograma</h4><p> En esta àrea es pot veure el fotograma "
 "seleccionat. També es poden reproduir les animacions en esta finestra "
-"prement el botó <b>Reproducció</b>.</p>"
+"prement el botó <b>Reproduïu</b>.</p>"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:740
 msgctxt "MainWindowGUI|"
@@ -1025,8 +1026,8 @@ msgid ""
 "<h4>Go to frame menu</h4> <p>Here you can specify a framenumber and the "
 "program will jump to the specified frame</p> "
 msgstr ""
-"<h4>Ves al menú de fotogrames</h4> <p>Ací es pot especificar un número de "
-"fotograma i el programa saltarà al fotograma especificar</p> "
+"<h4>Ves fins al menú de fotogrames</h4> <p>Ací es pot especificar un número "
+"de fotograma i el programa saltarà fins al fotograma especificat</p> "
 
 # skip-rule: common-es_s
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:746
@@ -1109,7 +1110,7 @@ msgid ""
 msgstr ""
 "No s'ha trobat cap codificador registrat per a\n"
 "utilitzar-se a l'exportació de vídeo. Açò es pot definir al\n"
-"menú de preferències. No serà possible l'exportació a\n"
+"menú de preferències. No serà possible l'exportació cap a\n"
 "vídeo fins que no s'haja establit l'ús d'un codificador.\n"
 "El voleu definir ara?"
 
@@ -1183,12 +1184,12 @@ msgstr "&Dispositiu de vídeo"
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:86
 msgctxt "QtFrontend|"
 msgid "Please wait..."
-msgstr "Espereu un moment..."
+msgstr "Espereu un moment…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:89
 msgctxt "QtFrontend|"
 msgid "Connecting camera..."
-msgstr "S'està connectant la càmera..."
+msgstr "S'està connectant la càmera…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:92
 msgctxt "QtFrontend|"
@@ -1198,17 +1199,17 @@ msgstr "S'estan important fotogrames del disc"
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:95
 msgctxt "QtFrontend|"
 msgid "Exporting..."
-msgstr "Exportació..."
+msgstr "Exportació…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:98
 msgctxt "QtFrontend|"
 msgid "Restoring project..."
-msgstr "S'està restaurant el projecte..."
+msgstr "S'està restaurant el projecte…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:101
 msgctxt "QtFrontend|"
 msgid "Saving scenes to disk..."
-msgstr "S'estan guardant les escenes en el disc..."
+msgstr "S'estan guardant les escenes en el disc…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:105
 msgctxt "QtFrontend|"
@@ -1397,8 +1398,8 @@ msgid ""
 "Preferences file %1 is not a valid XML preferences file. Please correct this "
 "or delete the file and try again."
 msgstr ""
-"El fitxer de preferències %1 no és cap fitxer XML de preferències. Corregiu "
-"açò o suprimiu el fitxer i torneu-ho a intentar."
+"El fitxer de preferències %1 no és cap fitxer en XML de preferències. "
+"Corregiu açò o suprimiu el fitxer i torneu-ho a intentar."
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:405
 msgctxt "QtFrontend|"
@@ -1459,7 +1460,7 @@ msgstr "Diferència"
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:213
 msgctxt "ToolsMenu|"
 msgid "Playback"
-msgstr "Reproducció"
+msgstr "Reproduïu"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:214
 msgctxt "ToolsMenu|"
@@ -1487,8 +1488,8 @@ msgid ""
 "<h4>Add Frames (CTRL+F)</h4> <p>Click on this button to <em>add</em> frames "
 "to the animation.</p>"
 msgstr ""
-"<h4>Afig fotogrames (CTRL+F)</h4> <p>Cliqueu en este botó per a <em>afegir</"
-"em> fotogrames a l'animació.</p>"
+"<h4>Afig fotogrames («Ctrl+F»)</h4> <p>Cliqueu en este botó per a "
+"<em>afegir</em> fotogrames a l'animació.</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:232
 msgctxt "ToolsMenu|"
@@ -1505,8 +1506,8 @@ msgid ""
 "<h4>New Scene (CTRL+E)</h4> <p>Click this button to <em>create</em> a new "
 "<em>scene</em> to the animation.</p>"
 msgstr ""
-"<h4>Escena nova (CTRL+E)</h4> <p>Cliqueu este botó per a <em>crear</em> una "
-"<em>escena</em> nova a l'animació.</p>"
+"<h4>Escena nova («Ctrl+E»)</h4> <p>Cliqueu este botó per a <em>crear</em> "
+"una <em>escena</em> nova a l'animació.</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:246
 msgctxt "ToolsMenu|"
@@ -1514,7 +1515,7 @@ msgid ""
 "<h4>Remove Scene (SHIFT+Delete)</h4> <p>Click this button to <em>remove</em> "
 "the selected scene from the animation.</p>"
 msgstr ""
-"<h4>Elimina una escena (MAJÚS+Supr)</h4> <p>Cliqueu este botó per a "
+"<h4>Elimina una escena (Maj+Supr)</h4> <p>Cliqueu este botó per a "
 "<em>eliminar</em> l'escena seleccionada de l'animació.</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:253
@@ -1544,7 +1545,7 @@ msgid ""
 "frame from the camera an put it in the animation</p> <p> This can also be "
 "done by pressing the <b>Space key</b></p>"
 msgstr ""
-"<h4>Captura un fotograma (Espai)</h4> <p>Cliqueu en este botó per a "
+"<h4>Captura un fotograma («Espai»)</h4> <p>Cliqueu en este botó per a "
 "<em>capturar</em> un fotograma de la càmera i posar-lo en l'animació</p> <p> "
 "Açò també es pot fer prement la <b>Barra espaiadora</b></p>"
 
@@ -1563,7 +1564,7 @@ msgstr ""
 "s'haurien de mesclar per damunt de la càmera o si esteu en mode reproducció: "
 "el nombre d'imatges que es reproduiran. </p> <p>Mesclant les imatges "
 "anteriors en la càmera, es pot veure amb més facilitat com serà la propera "
-"fotografia en relació amb les altres, i per tant, fent una animació stop-"
+"fotografia en relació amb les altres i, per tant, fent una animació stop-"
 "motion més suau!</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:285
@@ -1614,8 +1615,9 @@ msgid ""
 "<h4>Loop animation (CTRL+L)</h4> <p>With this button you can set whether you "
 "want the animation to play to the end, or to loop indefinitely.</p>"
 msgstr ""
-"<h4>Animació en bucle (CTRL+L)</h4> <p>Amb este botó podeu establir si voleu "
-"que l'animació es reproduïsca fins al final, o faça un bucle sense fi.</p>"
+"<h4>Animació en bucle («Ctrl+L»)</h4> <p>Amb este botó podeu establir si "
+"voleu que l'animació es reproduïsca fins al final, o faça un bucle sense fi."
+"</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:399
 msgctxt "ToolsMenu|"
@@ -1630,5 +1632,5 @@ msgid ""
 "daemon."
 msgstr ""
 "Només reproduïx els treballs actuals quan la capturadora s'executa com a "
-"dimoni. Aneu al menú preferències (CTRL+P) per a canviar a executar la "
-"captura d'imatges com a dimoni."
+"dimoni. Aneu fins al menú preferències («Ctrl+P») per a canviar l'execució "
+"de la captura d'imatges com a dimoni."
