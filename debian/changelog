@@ -1,9 +1,11 @@
-stopmotion (0.8.6-3) UNRELEASED; urgency=medium
+stopmotion (0.8.6-3) unstable; urgency=medium
 
   * track upstream development
   * bump policy, no changes required
+  * merge "swizzle libtar to libarchive" patch (closes: #1072585)
+    https://invent.kde.org/multimedia/stopmotion/-/merge_requests/20
 
- -- Barak A. Pearlmutter <bap@debian.org>  Wed, 05 Jun 2024 08:29:41 +0100
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 05 Jun 2024 09:06:54 +0100
 
 stopmotion (0.8.6-2) unstable; urgency=medium
 

@@ -10,7 +10,7 @@ Build-Depends: debhelper-compat (= 13),
 	qtbase5-dev, qttools5-dev-tools,
 	qttools5-dev,
 	qtmultimedia5-dev,
-	libtar-dev,
+	libarchive-dev,
 	libvorbis-dev,
 	libxml2-dev
 Standards-Version: 4.7.0
