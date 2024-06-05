@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2005-2014 by Linuxstopmotion contributors;              *
+ *   Copyright (C) 2005-2024 by Linuxstopmotion contributors;              *
  *   see the AUTHORS file for details.                                     *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -34,16 +34,14 @@
 #include <assert.h>
 #include <fcntl.h>
 #include <stdio.h>
-#include <libtar.h>
+#include <archive.h>
+#include <archive_entry.h>
 #include <cstring>
 #include <errno.h>
 #include <iosfwd>
 #include <map>
 #include <string>
 #include <set>
-
-// for older libtars
-#define UNCONST(s) const_cast<char*>(s)
 
 FileException::FileException(const char* functionName, int errorno) {
 	snprintf(buffer, sizeof(buffer), "%s(): %s", functionName,
@@ -77,36 +75,45 @@ ProjectSerializer::~ProjectSerializer() {
 }
 
 class TarFileRead {
-	TAR* tar;
+	struct archive* tar = archive_read_new();
+	struct archive_entry *entry;
 public:
 	TarFileRead(const char* filename) {
-		if (tar_open(&tar, UNCONST(filename), 0, O_RDONLY, 0, 0 | 0) == -1) {
-			throw ProjectFileReadException("tar_open", errno);
+		if (archive_read_support_format_tar(tar) != ARCHIVE_OK) {
+			throw ProjectFileReadException("archive_read_support_format_tar", errno);
+		}
+		if (archive_read_open_filename(tar, filename, 4096) != ARCHIVE_OK) {
+			throw ProjectFileReadException("archive_read_open_filename", errno);
 		}
 	}
 	~TarFileRead() {
 	}
 	bool next() {
-		int ret = th_read(tar);
-		if (ret == 0)
+		int ret = archive_read_next_header(tar, &entry);
+		if (ret == ARCHIVE_OK || ret == ARCHIVE_RETRY || ret == ARCHIVE_WARN)
 			return true;
-		if (ret < 0)
-			throw ProjectFileReadException("th_read", errno);
+		if (ret == ARCHIVE_FATAL)
+			throw ProjectFileReadException("archive_read_next_header", errno);
 		return false;
 	}
 	const char *regularFileFilename() const {
-		return TH_ISREG(tar)? th_get_pathname(tar) : 0;
+		return archive_entry_filetype(entry) == AE_IFREG ? archive_entry_pathname(entry) : 0;
 	}
 	void extract(std::string& filename) {
 		filename.c_str();
-		if (tar_extract_regfile(tar, &filename[0]) < 0) {
-			throw ProjectFileReadException("th_extract_regfile", errno);
+		int fd = open(&filename[0], O_WRONLY | O_CREAT | O_TRUNC, 0666);
+		if (fd < 0)
+			throw ProjectFileReadException("open", errno);
+		if (archive_read_data_into_fd(tar, fd) < 0) {
+			throw ProjectFileReadException("archive_read_data_into_fd", errno);
 		}
 	}
 	void finish() {
-		if (tar_close(tar) < 0)
-			throw ProjectFileReadException("tar_close", errno);
-		tar = 0;
+		if (archive_read_close(tar) != ARCHIVE_OK)
+			throw ProjectFileReadException("archive_read_close", errno);
+		if (archive_read_free(tar) != ARCHIVE_OK)
+			throw ProjectFileReadException("archive_read_finish", errno);
+		tar = NULL;
 	}
 };
 
@@ -279,26 +286,50 @@ public:
 };
 
 class TarFileWrite {
-	TAR* tar;
+	struct archive* tar = archive_write_new();
 public:
 	TarFileWrite(const char* tarFilename) {
-		if (-1== tar_open(&tar, UNCONST(tarFilename), NULL,
-					O_WRONLY | O_CREAT | O_TRUNC, 0644, 0)) {
-			throw ProjectFileCreationException("tar_open", errno);
+		if (archive_write_set_format_ustar(tar) != ARCHIVE_OK) {
+			throw ProjectFileCreationException("archive_write_set_format_ustar", errno);
+		}
+		if (archive_write_open_filename(tar, tarFilename) != ARCHIVE_OK) {
+			throw ProjectFileCreationException("archive_write_open_filename", errno);
 		}
 	}
 	~TarFileWrite() {
 	}
 	void add(const char* realPath, const char* storedPath) {
-		if (-1 == tar_append_file(tar, UNCONST(realPath), UNCONST(storedPath))) {
-			throw ProjectFileCreationException("tar_append_file", errno);
+		char buff[4096];
+		int fd;
+		int len;
+		struct stat st;
+		struct archive_entry *entry = archive_entry_new();
+		if (stat(realPath, &st) < 0)
+			throw ProjectFileCreationException("stat", errno);
+		archive_entry_copy_stat(entry, &st);
+		if (storedPath)
+			archive_entry_set_pathname(entry, storedPath);
+		if (archive_write_header(tar, entry) != ARCHIVE_OK)
+			throw ProjectFileCreationException("archive_write_header", errno);
+
+		fd = open(realPath, O_RDONLY);
+		if (fd < 0)
+			throw ProjectFileCreationException("open", errno);
+		len = read(fd, buff, sizeof(buff));
+		while (len > 0) {
+			if (archive_write_data(tar, buff, len) < 0)
+				throw ProjectFileCreationException("archive_write_data", errno);
+			len = read(fd, buff, sizeof(buff));
 		}
+		close(fd);
+		archive_entry_free(entry);
 	}
 	void eof() {
-		if (tar_close(tar) < 0) {
-			throw ProjectFileCreationException("tar_close", errno);
-		}
-		tar = 0;
+		if (archive_write_close(tar) != ARCHIVE_OK)
+			throw ProjectFileCreationException("archive_write_close", errno);
+		if (archive_write_free(tar) != ARCHIVE_OK)
+			throw ProjectFileCreationException("archive_write_free", errno);
+		tar = NULL;
 	}
 };
 
