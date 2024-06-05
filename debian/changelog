@@ -1,3 +1,9 @@
+stopmotion (0.8.6-3) UNRELEASED; urgency=medium
+
+  * track upstream development
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 05 Jun 2024 08:29:41 +0100
+
 stopmotion (0.8.6-2) unstable; urgency=medium
 
   * track upstream development which merged our quilt patches
