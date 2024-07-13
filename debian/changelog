@@ -1,8 +1,9 @@
-stopmotion (0.8.7-1) UNRELEASED; urgency=medium
+stopmotion (0.8.7-1) unstable; urgency=medium
 
   * new upstream release
+  * track last-minute upstream translations
 
- -- Barak A. Pearlmutter <bap@debian.org>  Sat, 13 Jul 2024 03:50:20 +0100
+ -- Barak A. Pearlmutter <bap@debian.org>  Sat, 13 Jul 2024 04:32:25 +0100
 
 stopmotion (0.8.6-3) unstable; urgency=medium
 
