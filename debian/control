@@ -6,7 +6,7 @@ Uploaders: Mahyuddin Susanto <udienz@ubuntu.com>,
 	   Bjoern Erik Nilsen <bjoern.nilsen@bjoernen.com>
 Build-Depends: debhelper-compat (= 13),
 	cmake,
-	pkgconf | pkg-config,
+	pkgconf,
 	qtbase5-dev, qttools5-dev-tools,
 	qttools5-dev,
 	qtmultimedia5-dev,

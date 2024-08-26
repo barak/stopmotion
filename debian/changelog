@@ -2,8 +2,9 @@ stopmotion (0.8.7-1) unstable; urgency=medium
 
   * new upstream release
   * track last-minute upstream translations
+  * remove "| pkg-config" build dependency
 
- -- Barak A. Pearlmutter <bap@debian.org>  Sat, 13 Jul 2024 04:32:25 +0100
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 26 Aug 2024 20:17:42 +0100
 
 stopmotion (0.8.6-3) unstable; urgency=medium
 
