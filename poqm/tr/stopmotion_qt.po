@@ -1,9 +1,9 @@
 # Volkan Gezer <volkangezer@gmail.com>, 2021.
-# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-08 12:13+0300\n"
+"PO-Revision-Date: 2024-09-23 15:31+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.07.70\n"
+"X-Generator: Lokalize 24.11.70\n"
 
 #: src/application/externalcommand.cpp:46
 msgctxt "ExternalCommand|"
@@ -50,17 +50,17 @@ msgctxt "ExternalCommand|"
 msgid "Successful!"
 msgstr "Başarılı!"
 
-#: src/application/languagehandler.cpp:89
+#: src/application/languagehandler.cpp:90
 msgctxt "LanguageHandler|"
 msgid "English"
 msgstr "İngilizce"
 
-#: src/application/languagehandler.cpp:91
+#: src/application/languagehandler.cpp:92
 msgctxt "LanguageHandler|"
 msgid "&Translation"
 msgstr "Ç&eviri"
 
-#: src/application/languagehandler.cpp:107
+#: src/application/languagehandler.cpp:108
 msgctxt ""
 "LanguageHandler|This should be translated to the name of the language you "
 "are translating to, in that language. Example: English = Deutsch (Deutsch is "
@@ -78,8 +78,8 @@ msgctxt "ModelHandler|"
 msgid "Removed the selected frame"
 msgstr "Seçili kareyi kaldır"
 
-#: src/application/modelhandler.cpp:220 src/application/modelhandler.cpp:231
-#: src/application/modelhandler.cpp:248
+#: src/application/modelhandler.cpp:220 src/application/modelhandler.cpp:230
+#: src/application/modelhandler.cpp:246
 msgctxt "ModelHandler|"
 msgid "Warning"
 msgstr "Uyarı"
@@ -89,12 +89,12 @@ msgctxt "ModelHandler|"
 msgid "You do not have Gimp installed on your system"
 msgstr "Sisteminizde GIMP kurulu değil"
 
-#: src/application/modelhandler.cpp:232
+#: src/application/modelhandler.cpp:231
 msgctxt "ModelHandler|"
 msgid "There is no active frame to open"
 msgstr "Açılacak etkin kare yok"
 
-#: src/application/modelhandler.cpp:249
+#: src/application/modelhandler.cpp:247
 msgctxt "ModelHandler|"
 msgid "Failed to start Gimp!"
 msgstr "GIMP başlatılamadı!"
@@ -159,7 +159,7 @@ msgstr "Çeviri"
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:69
 msgctxt "AboutDialog|"
 msgid "Czech"
-msgstr "Çek"
+msgstr "Çekçe"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:70
 msgctxt "AboutDialog|"
@@ -264,7 +264,7 @@ msgid ""
 "Below you can set which device Stopmotion should use for grabbing images and "
 "displaying video."
 msgstr ""
-"Aşağıda, görsel yakalama ve video görüntüleme için Stopmotion'un hangi "
+"Aşağıda, görsel yakalama ve video görüntüleme için Stopmotion’un hangi "
 "aygıtı kullanması gerektiğini seçebilirsiniz."
 
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:71
@@ -413,7 +413,7 @@ msgid ""
 "Below you can set which program/process Stopmotion should use for encoding "
 "the currently active project to a video file."
 msgstr ""
-"Aşağıda, geçerli projeyi bir video dosyasına kodlarken Stopmotion'un hangi "
+"Aşağıda, geçerli projeyi bir video dosyasına kodlarken Stopmotion’un hangi "
 "programı/süreci kullanması gerektiğini seçebilirsiniz."
 
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:374
@@ -457,17 +457,17 @@ msgstr "Kare numarası:"
 #: src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp:114
 msgctxt "FramePreferencesMenu|"
 msgid "Add &sound"
-msgstr "&Ses ekle"
+msgstr "&Ses Ekle"
 
 #: src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp:115
 msgctxt "FramePreferencesMenu|"
 msgid "&Remove Sound"
-msgstr "Sesi kaldı&r"
+msgstr "Sesi Kaldı&r"
 
 #: src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp:116
 msgctxt "FramePreferencesMenu|"
 msgid "Change name"
-msgstr "Adı değiştir"
+msgstr "Adı Değiştir"
 
 #: src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp:117
 msgctxt "FramePreferencesMenu|"
@@ -481,7 +481,7 @@ msgid ""
 "selected frame.</p> <p>The sound will begin playing when this frame is shown "
 "and play until it is done.</p>"
 msgstr ""
-"<h4>Ses ekle</h4> <p>Bu düğme ile, seçili kareye <em>ses ekleyebilirsiniz</"
+"<h4>Ses Ekle</h4> <p>Bu düğme ile, seçili kareye <em>ses ekleyebilirsiniz</"
 "em>.</p> <p>Ses, kare gösterildiğinde çalınır ve çalma ses bitinceye dek "
 "sürer.</p>"
 
@@ -491,7 +491,7 @@ msgid ""
 "<h4>Remove sound</h4> <p>With this button you can <em>remove</em> the "
 "selected sound from this frame.</p>"
 msgstr ""
-"<h4>Sesi kaldır</h4> <p>Bu düğme ile, bu kareden seçili sesi "
+"<h4>Sesi Kaldır</h4> <p>Bu düğme ile, bu kareden seçili sesi "
 "<em>kaldırabilirsiniz</em>.</p>"
 
 #: src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp:135
@@ -501,7 +501,7 @@ msgid ""
 "selected sound. <BR>The name of the sound has no other effect than making it "
 "easier work with the animation.</p>"
 msgstr ""
-"<h4>Adı değiştir</h4> <p>Bu düğme ile, seçili sesin adını "
+"<h4>Adı Değiştir</h4> <p>Bu düğme ile, seçili sesin adını "
 "değiştirebilirsiniz. <BR>Seçili sesin adı, onu canlandırmada daha iyi ayırt "
 "etmekten başka bir işe yaramaz.</p>"
 
@@ -513,15 +513,15 @@ msgid ""
 "they are done.</p>"
 msgstr ""
 "<h4>Sesler</h4> <p>Bu liste, kareye bağlı tüm seslerin bir listesini "
-"gösterir..</p><p>Sesler, kare gösterildiğinde çalmaya başlar ve çalma "
+"gösterir.</p><p>Sesler, kare gösterildiğinde çalmaya başlar ve çalma "
 "bitinceye dek sürer.</p>"
 
 #: src/presentation/frontends/qtfrontend/frameview.cpp:275
-#: src/presentation/frontends/qtfrontend/frameview.cpp:289
-#: src/presentation/frontends/qtfrontend/frameview.cpp:302
-#: src/presentation/frontends/qtfrontend/frameview.cpp:327
-#: src/presentation/frontends/qtfrontend/frameview.cpp:345
-#: src/presentation/frontends/qtfrontend/frameview.cpp:357
+#: src/presentation/frontends/qtfrontend/frameview.cpp:287
+#: src/presentation/frontends/qtfrontend/frameview.cpp:298
+#: src/presentation/frontends/qtfrontend/frameview.cpp:321
+#: src/presentation/frontends/qtfrontend/frameview.cpp:337
+#: src/presentation/frontends/qtfrontend/frameview.cpp:347
 msgctxt "FrameView|"
 msgid "Warning"
 msgstr "Uyarı"
@@ -531,18 +531,18 @@ msgctxt "FrameView|"
 msgid "No video device selected in the preferences menu."
 msgstr "Tercihler menüsünde seçili video aygıtı yok."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:289
+#: src/presentation/frontends/qtfrontend/frameview.cpp:287
 msgctxt "FrameView|"
 msgid "Pre poll command does not exists"
 msgstr "Önden seçim komutu yok."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:302
+#: src/presentation/frontends/qtfrontend/frameview.cpp:298
 msgctxt "FrameView|"
 msgid "You do not have the given grabber installed on your system"
 msgstr "Sisteminizde verilen yakalayıcı kurulu değil."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:327
-#: src/presentation/frontends/qtfrontend/frameview.cpp:345
+#: src/presentation/frontends/qtfrontend/frameview.cpp:321
+#: src/presentation/frontends/qtfrontend/frameview.cpp:337
 msgctxt "FrameView|"
 msgid ""
 "Grabbing failed. This may happen if you try\n"
@@ -553,7 +553,7 @@ msgstr ""
 "yakalamaya çalıştığınızda olabilir. Tercihler\n"
 "menüsünde yakalayıcı ayarlarınızı denetleyin."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:357
+#: src/presentation/frontends/qtfrontend/frameview.cpp:347
 msgctxt "FrameView|"
 msgid ""
 "You have to define an image grabber to use.\n"
@@ -569,7 +569,7 @@ msgid ""
 "Below you can set which program/process Stopmotion should use for grabbing "
 "images from the selected device."
 msgstr ""
-"Aşağıda, seçili aygıttan görseller yakalamak için Stopmotion'un hangi "
+"Aşağıda, seçili aygıttan görseller yakalamak için Stopmotion’un hangi "
 "programı/süreci kullanması gerektiğini ayarlayabilirsiniz."
 
 #: src/presentation/frontends/qtfrontend/importtab.cpp:65
@@ -654,7 +654,7 @@ msgid "&Export"
 msgstr "&Dışa Aktar"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:366
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:1133
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:1132
 msgctxt "MainWindowGUI|"
 msgid "Open &Recent"
 msgstr "S&on Kullanılanı Aç"
@@ -689,7 +689,6 @@ msgid "&Open"
 msgstr "&Aç"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:495
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:774
 msgctxt "MainWindowGUI|"
 msgid "&Save"
 msgstr "&Kaydet"
@@ -747,7 +746,7 @@ msgstr "Kareye g&it"
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:506
 msgctxt "MainWindowGUI|"
 msgid "&Configure Stopmotion"
-msgstr "S&topmotion'u Yapılandır"
+msgstr "S&topmotion’u Yapılandır"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:507
 msgctxt "MainWindowGUI|"
@@ -803,7 +802,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:594
 msgctxt "MainWindowGUI|"
 msgid "Save project"
-msgstr "Projeyi kaydet"
+msgstr "Projeyi Kaydet"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:598
 msgctxt "MainWindowGUI|"
@@ -817,7 +816,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:603
 msgctxt "MainWindowGUI|"
 msgid "Save project As"
-msgstr "Projeyi farklı kaydet"
+msgstr "Projeyi Farklı Kaydet"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:607
 msgctxt "MainWindowGUI|"
@@ -940,14 +939,14 @@ msgid ""
 "<h4>Configure Stopmotion</h4> <p>This will open a window where you can "
 "<em>configure</em> Stopmotion with various input and output devices.</p>"
 msgstr ""
-"<h4>Stopmotion'u Yapılandır</h4> <p>Bu seçenek ile, Stopmotion'u çeşitli "
+"<h4>Stopmotion’u Yapılandır</h4> <p>Bu seçenek ile, Stopmotion’u çeşitli "
 "girdi ve çıktı aygıtları ile <em>yapılandırabileceğiniz</em> bir pencere "
 "açılacaktır.</p>"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:691
 msgctxt "MainWindowGUI|"
 msgid "Configure Stopmotion"
-msgstr "Stopmotion'u Yapılandır"
+msgstr "Stopmotion’u Yapılandır"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:697
 msgctxt "MainWindowGUI|"
@@ -1036,7 +1035,7 @@ msgid ""
 "<h4>Tool menu</h4> <p>This is the tool menu where most of the buttons and "
 "widgets you will need when working on stop motion animations are located.</p>"
 msgstr ""
-"<h4>Araç menüsü</h4> <p>Burası, stop motion canlandırmalarla çalışırken "
+"<h4>Araç menüsü</h4> <p>Burası, stop-motion canlandırmalarla çalışırken "
 "gereksinim duyacağınız birçok araç takımının ve düğmelerin bulunduğu araç "
 "menüsüdür.</p>"
 
@@ -1053,43 +1052,33 @@ msgstr ""
 "p><p><b>Ok düğmelerini</b> veya <b>x</b> ve <b>z</b></p> düğmelerini "
 "kullanarak önceki ve sonraki kareye gidebilirsiniz"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:772
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:773
 msgctxt "MainWindowGUI|"
 msgid "Unsaved changes"
 msgstr "Kaydedilmemiş Değişiklikler"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:773
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:774
 msgctxt "MainWindowGUI|"
 msgid "There are unsaved changes. Do you want to save?"
 msgstr "Kaydedilmemiş değişiklikler var. Kaydetmek istiyor musunuz?"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:774
-msgctxt "MainWindowGUI|"
-msgid "Do&n't save"
-msgstr "Kaydet&me"
-
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:774
-msgctxt "MainWindowGUI|"
-msgid "Abort"
-msgstr "İptal Et"
-
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:806
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:808
 msgctxt "MainWindowGUI|"
 msgid "Choose project file"
-msgstr "Proje dosyası seç"
+msgstr "Proje Dosyası Seç"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:874
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:876
 msgctxt "MainWindowGUI|"
 msgid "Save As"
 msgstr "Farklı Kaydet"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:901
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:953
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:903
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:954
 msgctxt "MainWindowGUI|"
 msgid "Warning"
 msgstr "Uyarı"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:902
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:904
 msgctxt "MainWindowGUI|"
 msgid ""
 "Cannot find any registered encoder to be used for\n"
@@ -1102,24 +1091,12 @@ msgstr ""
 "bir kodlayıcı ayarlayıncaya dek video olarak dışa aktarma\n"
 "kullanılamaz. Şimdi ayarlamak istiyor musunuz?"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:906
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:956
-msgctxt "MainWindowGUI|"
-msgid "&Yes"
-msgstr "&Evet"
-
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:906
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:956
-msgctxt "MainWindowGUI|"
-msgid "&No"
-msgstr "&Hayır"
-
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:938
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:939
 msgctxt "MainWindowGUI|"
 msgid "Export to video file"
 msgstr "Video dosyasına dışa aktar"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:954
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:955
 msgctxt "MainWindowGUI|"
 msgid ""
 "The registered encoder is not valid. Do you want\n"
@@ -1128,7 +1105,7 @@ msgstr ""
 "Kayıtlı kodlayıcı geçerli değil. Tercihler menüsündeki\n"
 "ayarlarınızı denetlemek istiyor musunuz?"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:970
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:969
 msgctxt "MainWindowGUI|"
 msgid "Export to file"
 msgstr "Dosyaya dışa aktar"
@@ -1172,32 +1149,32 @@ msgstr "Video A&ygıtı"
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:86
 msgctxt "QtFrontend|"
 msgid "Please wait..."
-msgstr "Lütfen bekleyin..."
+msgstr "Lütfen bekleyin…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:89
 msgctxt "QtFrontend|"
 msgid "Connecting camera..."
-msgstr "Kamera bağlanıyor..."
+msgstr "Kamera bağlanıyor…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:92
 msgctxt "QtFrontend|"
 msgid "Importing frames from disk"
-msgstr "Diskten kareler içe aktarılıyor"
+msgstr "Diskten kareler içe aktarılıyor…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:95
 msgctxt "QtFrontend|"
 msgid "Exporting..."
-msgstr "Dışa Aktarılıyor..."
+msgstr "Dışa aktarılıyor…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:98
 msgctxt "QtFrontend|"
 msgid "Restoring project..."
-msgstr "Proje geri yükleniyor..."
+msgstr "Proje geri yükleniyor…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:101
 msgctxt "QtFrontend|"
 msgid "Saving scenes to disk..."
-msgstr "Sahneler diske kaydediliyor..."
+msgstr "Sahneler diske kaydediliyor…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:105
 msgctxt "QtFrontend|"
@@ -1237,7 +1214,7 @@ msgstr "vgrabbj VGA ardalan süreci"
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:266
 msgctxt "QtFrontend|"
 msgid "Starts vgrabbj as a daemon. Pretty fast."
-msgstr "vgrabbj'i bir ardalan süreci olarak başlatır. Pek hızlı."
+msgstr "vgrabbj’i bir ardalan süreci olarak başlatır. Pek hızlı."
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:274
 msgctxt "QtFrontend|"
@@ -1267,7 +1244,7 @@ msgstr "dvgrab"
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:294
 msgctxt "QtFrontend|"
 msgid "Grabbing from DV-cam."
-msgstr "DV kameradan yakalanıyor."
+msgstr "DV kameradan yakalanıyor…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:310
 msgctxt "QtFrontend|"
@@ -1347,7 +1324,7 @@ msgstr "Tercihler yazılamadı"
 #, qt-format
 msgctxt "QtFrontend|"
 msgid "Could not write preferences to file: %1"
-msgstr "Tercihler, dosyaya yazılamadı: %1"
+msgstr "Tercihler dosyaya yazılamadı: %1"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:391
 msgctxt "QtFrontend|"
@@ -1424,7 +1401,7 @@ msgstr "Soru"
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:207
 msgctxt "ToolsMenu|"
 msgid "FPS chooser"
-msgstr "FPS seçici"
+msgstr "FPS seçicisi"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:208
 msgctxt "ToolsMenu|"
@@ -1449,7 +1426,7 @@ msgstr "Oynat"
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:214
 msgctxt "ToolsMenu|"
 msgid "Auto"
-msgstr "Otomatik"
+msgstr "Kendiliğinden"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:218
 msgctxt "ToolsMenu|"
@@ -1508,7 +1485,7 @@ msgid ""
 "<h4>Toggle camera on/off (C)</h4> <p>Click this button to toggle the camera "
 "on and off</p> "
 msgstr ""
-"<h4>Kamera aç/kapat (C)</h4> <p>Kamerayı açıp kapatmak için bu düğmeye "
+"<h4>Kamera aç/kapat ©</h4> <p>Kamerayı açıp kapatmak için bu düğmeye "
 "tıklayın</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:259
@@ -1518,8 +1495,8 @@ msgid ""
 "p> <p>Note that you can also drag images from the frame bar and drop them on "
 "Gimp</p>"
 msgstr ""
-"<h4>GIMP'i çalıştır</h4> <p>Etkin kareyi GIMP'te açmak için bu düğmeye "
-"tıklayın</p> <p>Aynı zamanda, kareleri kare çubuğundan GIMP'e "
+"<h4>GIMP’i çalıştır</h4> <p>Etkin kareyi GIMP’te açmak için bu düğmeye "
+"tıklayın.</p> <p>Aynı zamanda, kareleri kare çubuğundan GIMP’e "
 "sürükleyebilirsiniz.</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:266
@@ -1547,7 +1524,7 @@ msgstr ""
 "oynatma kipindeyken kaç görselin kameranın üzerinde geriye doğru "
 "karıştırılacağını belirtebilirsiniz: Kaç tane görsel oynatılacak.</p> "
 "<p>Önceki görselleri kameraya karıştırarak sonraki karenin diğerine oranla "
-"nice görüneceğini daha kolay görebilir ve daha pürüzsüz bir stop motion "
+"nice görüneceğini daha kolay görebilir ve daha pürüzsüz bir stop-motion "
 "canlandırma yapabilirsiniz!</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:285
@@ -1557,9 +1534,9 @@ msgid ""
 "speed the animation in the <b>FrameView</b> should run at.</p> <p>To start "
 "an animation press the <b>Run Animation</b> button.</p>"
 msgstr ""
-"<h4>FPS seçici</h4> <p>Bu seçicideki değeri değiştirerek <b>Kare Görünümü</"
-"b>'ndeki canlandırmanın oynatma hızını ayarlayabilirsiniz.</p> <p>Bir "
-"animasyon başlatmak için <b>Canlandırmayı Çalıştır</b> düğmesine basın.</p>"
+"<h4>FPS seçicizi</h4> <p>Bu seçicideki değeri değiştirerek <b>Kare Görünümü</"
+"b>’ndeki canlandırmanın oynatma hızını ayarlayabilirsiniz.</p> <p>Bir "
+"canlandırma başlatmak için <b>Canlandırmayı Çalıştır</b> düğmesine basın.</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:295
 msgctxt "ToolsMenu|"

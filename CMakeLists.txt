@@ -1,33 +1,30 @@
 ###
 # general project setup
 ###
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.22)
 
 project(stopmotion
-  VERSION 0.8.7
   LANGUAGES CXX)
+set(PROJECT_VERSION 0.9.0)
 
 # set project options required by Qt
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-enable_testing()
+option(BUILD_TESTING "Build the tests" OFF)
 
 ###
 # find external dependencies
 ###
 
 # Qt
-find_package(Qt5 5.11
+find_package(Qt6 6.5
   COMPONENTS Widgets Multimedia LinguistTools
   REQUIRED)
-# only needed for testing
-find_package(Qt5 5.11
-  COMPONENTS Test)
 
 # LibXml2
 find_package(LibXml2
@@ -45,10 +42,16 @@ find_library(VORBISFILE_LIBRARY_PATH
   NAMES vorbisfile
   REQUIRED)
 
-# libdl, only needed for testing
-find_library(DL_LIBRARY_PATH
-  NAMES dl
+if(BUILD_TESTING)
+  enable_testing()
+  find_package(Qt6 6.5 REQUIRED
+    COMPONENTS Test
   )
+  # libdl, only needed for testing
+  find_library(DL_LIBRARY_PATH REQUIRED
+    NAMES dl
+  )
+endif ()
 
 include(FeatureSummary)
 feature_summary(WHAT PACKAGES_FOUND PACKAGES_NOT_FOUND)
@@ -68,7 +71,7 @@ add_subdirectory(translations)
 # handle translation files
 ###
 file(GLOB TS_FILES "translations/stopmotion_*.ts")
-qt5_add_translation(QM_FILES "${TS_FILES}")
+qt_add_translation(QM_FILES "${TS_FILES}")
 
 ###
 # create executable and link libraries
@@ -158,9 +161,9 @@ add_executable(stopmotion
 # link to Qt libraries
 target_link_libraries(stopmotion
   PUBLIC
-  Qt5::Core
-  Qt5::Widgets
-  Qt5::Multimedia
+  Qt6::Core
+  Qt6::Widgets
+  Qt6::Multimedia
   )
 # link to LibXml2
 target_link_libraries(stopmotion

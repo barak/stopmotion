@@ -4,11 +4,11 @@
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # SPDX-FileCopyrightText: 2023 Antoni Bella Pérez <antonibella5@yahoo.com>
-# Josep M. Ferrer <txemaq@gmail.com>, 2021, 2024.
+# SPDX-FileCopyrightText: 2021, 2024 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: stopmotion\n"
-"PO-Revision-Date: 2024-01-30 14:30+0100\n"
+"PO-Revision-Date: 2024-10-23 22:00+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: src/application/externalcommand.cpp:46
 msgctxt "ExternalCommand|"
@@ -56,18 +56,18 @@ msgctxt "ExternalCommand|"
 msgid "Successful!"
 msgstr "Correcte!"
 
-#: src/application/languagehandler.cpp:89
+#: src/application/languagehandler.cpp:90
 msgctxt "LanguageHandler|"
 msgid "English"
 msgstr "Anglés"
 
-#: src/application/languagehandler.cpp:91
+#: src/application/languagehandler.cpp:92
 msgctxt "LanguageHandler|"
 msgid "&Translation"
 msgstr "&Traducció"
 
 # skip-rule: iso_639-English
-#: src/application/languagehandler.cpp:107
+#: src/application/languagehandler.cpp:108
 msgctxt ""
 "LanguageHandler|This should be translated to the name of the language you "
 "are translating to, in that language. Example: English = Deutsch (Deutsch is "
@@ -78,15 +78,15 @@ msgstr "Català"
 #: src/application/modelhandler.cpp:62
 msgctxt "ModelHandler|"
 msgid "Choose frames to add"
-msgstr "Escolliu els fotogrames que s'afegiran"
+msgstr "Trieu els fotogrames que s'afegiran"
 
 #: src/application/modelhandler.cpp:183
 msgctxt "ModelHandler|"
 msgid "Removed the selected frame"
 msgstr "S'ha eliminat el fotograma seleccionat"
 
-#: src/application/modelhandler.cpp:220 src/application/modelhandler.cpp:231
-#: src/application/modelhandler.cpp:248
+#: src/application/modelhandler.cpp:220 src/application/modelhandler.cpp:230
+#: src/application/modelhandler.cpp:246
 msgctxt "ModelHandler|"
 msgid "Warning"
 msgstr "Avís"
@@ -96,12 +96,12 @@ msgctxt "ModelHandler|"
 msgid "You do not have Gimp installed on your system"
 msgstr "Gimp no està instal·lat en este sistema"
 
-#: src/application/modelhandler.cpp:232
+#: src/application/modelhandler.cpp:231
 msgctxt "ModelHandler|"
 msgid "There is no active frame to open"
 msgstr "No hi ha cap fotograma actiu per a obrir"
 
-#: src/application/modelhandler.cpp:249
+#: src/application/modelhandler.cpp:247
 msgctxt "ModelHandler|"
 msgid "Failed to start Gimp!"
 msgstr "No s'ha pogut iniciar Gimp!"
@@ -114,7 +114,7 @@ msgstr "Animació en execució"
 #: src/application/soundhandler.cpp:44
 msgctxt "SoundHandler|"
 msgid "Choose sound file"
-msgstr "Escolliu un fitxer de so"
+msgstr "Trieu un fitxer de so"
 
 #: src/application/soundhandler.cpp:44
 msgctxt "SoundHandler|"
@@ -269,7 +269,7 @@ msgid ""
 "Below you can set which device Stopmotion should use for grabbing images and "
 "displaying video."
 msgstr ""
-"A davall podeu definir el dispositiu que utilitzarà Stopmotion per a "
+"A davall podeu establir el dispositiu que utilitzarà Stopmotion per a "
 "capturar imatges i visualitzar vídeo."
 
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:71
@@ -419,7 +419,7 @@ msgid ""
 "Below you can set which program/process Stopmotion should use for encoding "
 "the currently active project to a video file."
 msgstr ""
-"A davall podeu definir el programa/procés que utilitzarà Stopmotion per a "
+"A davall podeu establir el programa/procés que utilitzarà Stopmotion per a "
 "codificar el projecte actualment actiu a un fitxer de vídeo."
 
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:374
@@ -523,11 +523,11 @@ msgstr ""
 "fotograma i es reproduiran fins que finalitzen.</p>"
 
 #: src/presentation/frontends/qtfrontend/frameview.cpp:275
-#: src/presentation/frontends/qtfrontend/frameview.cpp:289
-#: src/presentation/frontends/qtfrontend/frameview.cpp:302
-#: src/presentation/frontends/qtfrontend/frameview.cpp:327
-#: src/presentation/frontends/qtfrontend/frameview.cpp:345
-#: src/presentation/frontends/qtfrontend/frameview.cpp:357
+#: src/presentation/frontends/qtfrontend/frameview.cpp:287
+#: src/presentation/frontends/qtfrontend/frameview.cpp:298
+#: src/presentation/frontends/qtfrontend/frameview.cpp:321
+#: src/presentation/frontends/qtfrontend/frameview.cpp:337
+#: src/presentation/frontends/qtfrontend/frameview.cpp:347
 msgctxt "FrameView|"
 msgid "Warning"
 msgstr "Avís"
@@ -538,18 +538,18 @@ msgid "No video device selected in the preferences menu."
 msgstr ""
 "No s'ha seleccionat cap dispositiu de vídeo en el menú de les preferències."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:289
+#: src/presentation/frontends/qtfrontend/frameview.cpp:287
 msgctxt "FrameView|"
 msgid "Pre poll command does not exists"
 msgstr "No existix l'ordre de presondeig"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:302
+#: src/presentation/frontends/qtfrontend/frameview.cpp:298
 msgctxt "FrameView|"
 msgid "You do not have the given grabber installed on your system"
 msgstr "La capturadora indicada no està instal·lada en este sistema"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:327
-#: src/presentation/frontends/qtfrontend/frameview.cpp:345
+#: src/presentation/frontends/qtfrontend/frameview.cpp:321
+#: src/presentation/frontends/qtfrontend/frameview.cpp:337
 msgctxt "FrameView|"
 msgid ""
 "Grabbing failed. This may happen if you try\n"
@@ -560,7 +560,7 @@ msgstr ""
 "capturar des d'un dispositiu no vàlid. Comproveu\n"
 "la configuració de la capturadora en el menú de preferències."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:357
+#: src/presentation/frontends/qtfrontend/frameview.cpp:347
 msgctxt "FrameView|"
 msgid ""
 "You have to define an image grabber to use.\n"
@@ -576,7 +576,7 @@ msgid ""
 "Below you can set which program/process Stopmotion should use for grabbing "
 "images from the selected device."
 msgstr ""
-"A davall podeu definir el programa/procés que utilitzarà Stopmotion per a "
+"A davall podeu establir el programa/procés que utilitzarà Stopmotion per a "
 "capturar imatges del dispositiu seleccionat."
 
 #: src/presentation/frontends/qtfrontend/importtab.cpp:65
@@ -661,7 +661,7 @@ msgid "&Export"
 msgstr "&Exporta"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:366
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:1133
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:1132
 msgctxt "MainWindowGUI|"
 msgid "Open &Recent"
 msgstr "Obri'n un &recent"
@@ -696,7 +696,6 @@ msgid "&Open"
 msgstr "O&bri"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:495
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:774
 msgctxt "MainWindowGUI|"
 msgid "&Save"
 msgstr "Guar&da"
@@ -936,7 +935,7 @@ msgid ""
 "you can choose a frame you want to <em>go to</em>.</p>"
 msgstr ""
 "<h4>Ves fins al fotograma</h4> <p>Açò obrirà un menú emergent a la part "
-"inferior a on podreu triar un fotograma al qual vulgueu <em>anar-hi</em>.</p>"
+"inferior a on podreu triar un fotograma al qual vulgueu <em>anar</em>.</p>"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:682
 msgctxt "MainWindowGUI|"
@@ -1064,43 +1063,33 @@ msgstr ""
 "p><p>Es pot canviar al fotograma següent i l'anterior utilitzant els "
 "<b>botons de fletxa</b> o <b>x</b> i <b>z</b></p> "
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:772
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:773
 msgctxt "MainWindowGUI|"
 msgid "Unsaved changes"
 msgstr "Canvis sense guardar"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:773
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:774
 msgctxt "MainWindowGUI|"
 msgid "There are unsaved changes. Do you want to save?"
 msgstr "Hi ha canvis sense guardar. Els voleu guardar?"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:774
-msgctxt "MainWindowGUI|"
-msgid "Do&n't save"
-msgstr "&No guardes"
-
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:774
-msgctxt "MainWindowGUI|"
-msgid "Abort"
-msgstr "Interromp"
-
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:806
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:808
 msgctxt "MainWindowGUI|"
 msgid "Choose project file"
 msgstr "Seleccioneu un fitxer de projecte"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:874
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:876
 msgctxt "MainWindowGUI|"
 msgid "Save As"
 msgstr "Anomena i guarda"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:901
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:953
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:903
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:954
 msgctxt "MainWindowGUI|"
 msgid "Warning"
 msgstr "Avís"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:902
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:904
 msgctxt "MainWindowGUI|"
 msgid ""
 "Cannot find any registered encoder to be used for\n"
@@ -1114,24 +1103,12 @@ msgstr ""
 "vídeo fins que no s'haja establit l'ús d'un codificador.\n"
 "El voleu definir ara?"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:906
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:956
-msgctxt "MainWindowGUI|"
-msgid "&Yes"
-msgstr "&Sí"
-
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:906
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:956
-msgctxt "MainWindowGUI|"
-msgid "&No"
-msgstr "&No"
-
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:938
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:939
 msgctxt "MainWindowGUI|"
 msgid "Export to video file"
 msgstr "Exporta cap a un fitxer de vídeo"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:954
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:955
 msgctxt "MainWindowGUI|"
 msgid ""
 "The registered encoder is not valid. Do you want\n"
@@ -1140,7 +1117,7 @@ msgstr ""
 "El codificador registrat no és vàlid. Voleu revisar\n"
 "la configuració en el menú de preferències?"
 
-#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:970
+#: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:969
 msgctxt "MainWindowGUI|"
 msgid "Export to file"
 msgstr "Exporta cap a un fitxer"
@@ -1399,7 +1376,7 @@ msgid ""
 "or delete the file and try again."
 msgstr ""
 "El fitxer de preferències %1 no és cap fitxer en XML de preferències. "
-"Corregiu açò o suprimiu el fitxer i torneu-ho a intentar."
+"Corregiu açò o suprimiu el fitxer i torneu-ho a provar."
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:405
 msgctxt "QtFrontend|"
@@ -1488,7 +1465,7 @@ msgid ""
 "<h4>Add Frames (CTRL+F)</h4> <p>Click on this button to <em>add</em> frames "
 "to the animation.</p>"
 msgstr ""
-"<h4>Afig fotogrames («Ctrl+F»)</h4> <p>Cliqueu en este botó per a "
+"<h4>Afig fotogrames («Ctrl+F»)</h4> <p>Cliqueu damunt d'este botó per a "
 "<em>afegir</em> fotogrames a l'animació.</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:232
@@ -1497,8 +1474,8 @@ msgid ""
 "<h4>Remove Selection (Delete)</h4> <p>Click this button to <em>remove</em> "
 "the selected frames from the animation.</p>"
 msgstr ""
-"<h4>Elimina la selecció (Suprimix)</h4> <p>Cliqueu este botó per a "
-"<em>eliminar</em> els fotogrames seleccionats de l'animació.</p>"
+"<h4>Elimina la selecció («Suprimix»)</h4> <p>Cliqueu damunt d'este botó per "
+"a <em>eliminar</em> els fotogrames seleccionats de l'animació.</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:239
 msgctxt "ToolsMenu|"
@@ -1506,8 +1483,8 @@ msgid ""
 "<h4>New Scene (CTRL+E)</h4> <p>Click this button to <em>create</em> a new "
 "<em>scene</em> to the animation.</p>"
 msgstr ""
-"<h4>Escena nova («Ctrl+E»)</h4> <p>Cliqueu este botó per a <em>crear</em> "
-"una <em>escena</em> nova a l'animació.</p>"
+"<h4>Escena nova («Ctrl+E»)</h4> <p>Cliqueu damunt d'este botó per a "
+"<em>crear</em> una <em>escena</em> nova a l'animació.</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:246
 msgctxt "ToolsMenu|"
@@ -1515,8 +1492,8 @@ msgid ""
 "<h4>Remove Scene (SHIFT+Delete)</h4> <p>Click this button to <em>remove</em> "
 "the selected scene from the animation.</p>"
 msgstr ""
-"<h4>Elimina una escena (Maj+Supr)</h4> <p>Cliqueu este botó per a "
-"<em>eliminar</em> l'escena seleccionada de l'animació.</p>"
+"<h4>Elimina una escena («Majús+Supr»)</h4> <p>Cliqueu damunt d'este botó per "
+"a <em>eliminar</em> l'escena seleccionada de l'animació.</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:253
 msgctxt "ToolsMenu|"
@@ -1524,8 +1501,8 @@ msgid ""
 "<h4>Toggle camera on/off (C)</h4> <p>Click this button to toggle the camera "
 "on and off</p> "
 msgstr ""
-"<h4>Canvia la càmera encesa/apagada (C)</h4> <p>Cliqueu este botó per a "
-"canviar la càmera encesa o apagada</p> "
+"<h4>Canvia la càmera encesa/apagada (C)</h4> <p>Cliqueu damunt d'este botó "
+"per a canviar la càmera encesa o apagada</p> "
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:259
 msgctxt "ToolsMenu|"
@@ -1534,9 +1511,9 @@ msgid ""
 "p> <p>Note that you can also drag images from the frame bar and drop them on "
 "Gimp</p>"
 msgstr ""
-"<h4>Inicia Gimp</h4> <p>Cliqueu este botó per a obrir el fotograma actiu en "
-"Gimp</p> <p>Recordeu que també es poden arrossegar imatges des de la barra "
-"de fotogrames i deixar-los anar en Gimp</p>"
+"<h4>Inicia Gimp</h4> <p>Cliqueu damunt d'este botó per a obrir el fotograma "
+"actiu en Gimp</p> <p>Recordeu que també es poden arrossegar imatges des de "
+"la barra de fotogrames i deixar-los anar en Gimp</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:266
 msgctxt "ToolsMenu|"
@@ -1545,7 +1522,7 @@ msgid ""
 "frame from the camera an put it in the animation</p> <p> This can also be "
 "done by pressing the <b>Space key</b></p>"
 msgstr ""
-"<h4>Captura un fotograma («Espai»)</h4> <p>Cliqueu en este botó per a "
+"<h4>Captura un fotograma («Espai»)</h4> <p>Cliqueu damunt d'este botó per a "
 "<em>capturar</em> un fotograma de la càmera i posar-lo en l'animació</p> <p> "
 "Açò també es pot fer prement la <b>Barra espaiadora</b></p>"
 
@@ -1563,9 +1540,9 @@ msgstr ""
 "lliscant es pot especificar el nombre d'imatges cap arrere de l'animació "
 "s'haurien de mesclar per damunt de la càmera o si esteu en mode reproducció: "
 "el nombre d'imatges que es reproduiran. </p> <p>Mesclant les imatges "
-"anteriors en la càmera, es pot veure amb més facilitat com serà la propera "
-"fotografia en relació amb les altres i, per tant, fent una animació stop-"
-"motion més suau!</p>"
+"anteriors en la càmera, es pot veure amb més facilitat com serà la "
+"fotografia següent en relació amb les altres i, per tant, fent una animació "
+"stop-motion més suau!</p>"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:285
 msgctxt "ToolsMenu|"

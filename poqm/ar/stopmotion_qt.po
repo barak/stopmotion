@@ -1,19 +1,17 @@
-# translation of stopmotion_qt.po to Slovak
-# Roman Paholík <wizzardsk@gmail.com>, 2021.
+# SPDX-FileCopyrightText: 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
-"Project-Id-Version: stopmotion_qt\n"
-"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-04-20 00:27+0000\n"
-"PO-Revision-Date: 2021-04-21 20:25+0200\n"
-"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
-"Language-Team: Slovak <kde-sk@linux.sk>\n"
-"Language: sk\n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2024-12-19 06:39+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.12.3\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Qt-Contexts: true\n"
 
 #: src/application/externalcommand.cpp:46
@@ -24,12 +22,12 @@ msgstr ""
 #: src/application/externalcommand.cpp:56
 msgctxt "ExternalCommand|"
 msgid "Submit"
-msgstr "Odoslať"
+msgstr "أرسل"
 
 #: src/application/externalcommand.cpp:62
 msgctxt "ExternalCommand|"
 msgid "Close"
-msgstr "Zavrieť"
+msgstr "أغلق"
 
 #: src/application/externalcommand.cpp:75
 msgctxt "ExternalCommand|"
@@ -40,27 +38,27 @@ msgstr ""
 #: src/application/externalcommand.cpp:126
 msgctxt "ExternalCommand|"
 msgid "Result"
-msgstr "Výsledok"
+msgstr "النتيجة"
 
 #: src/application/externalcommand.cpp:123
 msgctxt "ExternalCommand|"
 msgid "Failed!"
-msgstr "Zlyhalo!"
+msgstr "فشل!"
 
 #: src/application/externalcommand.cpp:126
 msgctxt "ExternalCommand|"
 msgid "Successful!"
-msgstr "Úspešné!"
+msgstr "نجح!"
 
 #: src/application/languagehandler.cpp:90
 msgctxt "LanguageHandler|"
 msgid "English"
-msgstr "Angličtina"
+msgstr "الإنجليزية"
 
 #: src/application/languagehandler.cpp:92
 msgctxt "LanguageHandler|"
 msgid "&Translation"
-msgstr "Preklad"
+msgstr "ال&ترجمة"
 
 #: src/application/languagehandler.cpp:108
 msgctxt ""
@@ -68,7 +66,7 @@ msgctxt ""
 "are translating to, in that language. Example: English = Deutsch (Deutsch is "
 "\"German\" in German)"
 msgid "English"
-msgstr "Angličtina"
+msgstr "الإنجليزية"
 
 #: src/application/modelhandler.cpp:62
 msgctxt "ModelHandler|"
@@ -84,7 +82,7 @@ msgstr ""
 #: src/application/modelhandler.cpp:246
 msgctxt "ModelHandler|"
 msgid "Warning"
-msgstr "Upozornenie"
+msgstr "تحذير"
 
 #: src/application/modelhandler.cpp:221
 msgctxt "ModelHandler|"
@@ -109,7 +107,7 @@ msgstr ""
 #: src/application/soundhandler.cpp:44
 msgctxt "SoundHandler|"
 msgid "Choose sound file"
-msgstr "Vyberte zvukový súbor"
+msgstr "اختر ملف صوت"
 
 #: src/application/soundhandler.cpp:44
 msgctxt "SoundHandler|"
@@ -134,7 +132,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:47
 msgctxt "AboutDialog|"
 msgid "&About"
-msgstr "&O programe"
+msgstr "&عن"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:50
 msgctxt "AboutDialog|"
@@ -144,103 +142,103 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:54
 msgctxt "AboutDialog|"
 msgid "Contributors"
-msgstr "Prispievatelia"
+msgstr "المساهمون"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:64
 msgctxt "AboutDialog|"
 msgid "A&uthors"
-msgstr "A&utori"
+msgstr "الم&ؤلّفون"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:68
 msgctxt "AboutDialog|"
 msgid "Translation"
-msgstr "Preklad"
+msgstr "الترجمة"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:69
 msgctxt "AboutDialog|"
 msgid "Czech"
-msgstr "Čeština"
+msgstr "التشيكية"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:70
 msgctxt "AboutDialog|"
 msgid "Slovenian"
-msgstr "Slovinčina"
+msgstr "السلوفينية"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:71
 msgctxt "AboutDialog|"
 msgid "French"
-msgstr "Francúzština"
+msgstr "الفرنسيّة"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:72
 msgctxt "AboutDialog|"
 msgid "German"
-msgstr "Nemčina"
+msgstr "الألمانية"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:74
 msgctxt "AboutDialog|"
 msgid "Portuguese"
-msgstr "Portugalčina"
+msgstr "البرتغالية"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:76
 msgctxt "AboutDialog|"
 msgid "Spanish"
-msgstr "Španielčina"
+msgstr "الإسبانيّة"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:77
 msgctxt "AboutDialog|"
 msgid "Swedish"
-msgstr "Švédčina"
+msgstr "السويدية"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:79
 msgctxt "AboutDialog|"
 msgid "Turkish"
-msgstr "Turečtina"
+msgstr "التركية"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:80
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:81
 msgctxt "AboutDialog|"
 msgid "Italian"
-msgstr "Taliančina"
+msgstr "الإيطالية"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:82
 msgctxt "AboutDialog|"
 msgid "Traditional Chinese"
-msgstr "Čínština (tradičná)"
+msgstr "الصينيّة التقليدية"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:83
 msgctxt "AboutDialog|"
 msgid "Arabic"
-msgstr "Arabské"
+msgstr "العربية"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:84
 msgctxt "AboutDialog|"
 msgid "Russian"
-msgstr "Ruština"
+msgstr "الروسية"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:85
 msgctxt "AboutDialog|"
 msgid "Hebrew"
-msgstr "Hebrejčina"
+msgstr "العبرية"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:87
 msgctxt "AboutDialog|"
 msgid "Logo"
-msgstr "Logo"
+msgstr "الشعار"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:89
 msgctxt "AboutDialog|"
 msgid "Coordinating"
-msgstr ""
+msgstr "التنسيق"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:93
 msgctxt "AboutDialog|"
 msgid "Testing"
-msgstr "Testovanie"
+msgstr "اختباريّ"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:105
 msgctxt "AboutDialog|"
 msgid "&Thanks To"
-msgstr "Poďakovanie"
+msgstr "ال&شكر إلى"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:110
 msgctxt "AboutDialog|"
@@ -250,12 +248,12 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:112
 msgctxt "AboutDialog|"
 msgid "OK"
-msgstr "OK"
+msgstr "حسنًا"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:125
 msgctxt "AboutDialog|"
 msgid "About"
-msgstr "O aplikácii"
+msgstr "عن"
 
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:69
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:356
@@ -285,31 +283,31 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:365
 msgctxt "DeviceTab|"
 msgid "Name"
-msgstr "Názov"
+msgstr "الاسم"
 
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:80
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:365
 msgctxt "DeviceTab|"
 msgid "Description"
-msgstr "Popis"
+msgstr "الوصف"
 
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:94
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:368
 msgctxt "DeviceTab|"
 msgid "&Add"
-msgstr "&Pridať"
+msgstr "أ&ضف"
 
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:98
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:369
 msgctxt "DeviceTab|"
 msgid "&Remove"
-msgstr "O&dstrániť"
+msgstr "أ&زل"
 
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:101
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:370
 msgctxt "DeviceTab|"
 msgid "&Edit"
-msgstr "&Upraviť"
+msgstr "&حرّر"
 
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:105
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:373
@@ -326,25 +324,25 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/devicetab.cpp:161
 msgctxt "DeviceTab|"
 msgid "device"
-msgstr "zariadenie"
+msgstr "الجهاز"
 
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:87
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:386
 msgctxt "ExportTab|"
 msgid "&Add"
-msgstr "&Pridať"
+msgstr "أ&ضف"
 
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:91
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:387
 msgctxt "ExportTab|"
 msgid "&Remove"
-msgstr "O&dstrániť"
+msgstr "أ&زل"
 
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:94
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:388
 msgctxt "ExportTab|"
 msgid "&Edit"
-msgstr "&Upraviť"
+msgstr "&حرّر"
 
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:98
 msgctxt "ExportTab|"
@@ -362,13 +360,13 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:393
 msgctxt "ExportTab|"
 msgid "Yes"
-msgstr "Áno"
+msgstr "نعم"
 
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:115
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:394
 msgctxt "ExportTab|"
 msgid "No"
-msgstr "Nie"
+msgstr "لا"
 
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:120
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:395
@@ -380,7 +378,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:396
 msgctxt "ExportTab|"
 msgid "Browse"
-msgstr "Prehliadať"
+msgstr "تصفح"
 
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:131
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:397
@@ -428,17 +426,17 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:383
 msgctxt "ExportTab|"
 msgid "Name"
-msgstr "Názov"
+msgstr "الاسم"
 
 #: src/presentation/frontends/qtfrontend/exporttab.cpp:383
 msgctxt "ExportTab|"
 msgid "Description"
-msgstr "Popis"
+msgstr "الوصف"
 
 #: src/presentation/frontends/qtfrontend/framebar/framebar.cpp:196
 msgctxt "FrameBar|"
 msgid "Frame number: "
-msgstr ""
+msgstr "رقم الإطار: "
 
 #: src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp:114
 msgctxt "FramePreferencesMenu|"
@@ -448,17 +446,17 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp:115
 msgctxt "FramePreferencesMenu|"
 msgid "&Remove Sound"
-msgstr ""
+msgstr "أزل ال&صوت"
 
 #: src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp:116
 msgctxt "FramePreferencesMenu|"
 msgid "Change name"
-msgstr "Zmeniť názov"
+msgstr "غير اسم"
 
 #: src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp:117
 msgctxt "FramePreferencesMenu|"
 msgid "Sounds:"
-msgstr "Zvuky:"
+msgstr "الأصوات:"
 
 #: src/presentation/frontends/qtfrontend/framepreferencesmenu.cpp:120
 msgctxt "FramePreferencesMenu|"
@@ -499,7 +497,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/frameview.cpp:347
 msgctxt "FrameView|"
 msgid "Warning"
-msgstr "Upozornenie"
+msgstr "تحذير"
 
 #: src/presentation/frontends/qtfrontend/frameview.cpp:275
 msgctxt "FrameView|"
@@ -552,31 +550,31 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/importtab.cpp:323
 msgctxt "ImportTab|"
 msgid "Name"
-msgstr "Názov"
+msgstr "الاسم"
 
 #: src/presentation/frontends/qtfrontend/importtab.cpp:71
 #: src/presentation/frontends/qtfrontend/importtab.cpp:323
 msgctxt "ImportTab|"
 msgid "Description"
-msgstr "Popis"
+msgstr "الوصف"
 
 #: src/presentation/frontends/qtfrontend/importtab.cpp:87
 #: src/presentation/frontends/qtfrontend/importtab.cpp:326
 msgctxt "ImportTab|"
 msgid "&Add"
-msgstr "&Pridať"
+msgstr "أ&ضف"
 
 #: src/presentation/frontends/qtfrontend/importtab.cpp:91
 #: src/presentation/frontends/qtfrontend/importtab.cpp:327
 msgctxt "ImportTab|"
 msgid "&Remove"
-msgstr "O&dstrániť"
+msgstr "أ&زل"
 
 #: src/presentation/frontends/qtfrontend/importtab.cpp:94
 #: src/presentation/frontends/qtfrontend/importtab.cpp:328
 msgctxt "ImportTab|"
 msgid "&Edit"
-msgstr "&Upraviť"
+msgstr "&حرّر"
 
 #: src/presentation/frontends/qtfrontend/importtab.cpp:98
 #: src/presentation/frontends/qtfrontend/importtab.cpp:330
@@ -611,63 +609,63 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:524
 msgctxt "MainWindowGUI|"
 msgid "&File"
-msgstr "&Súbor"
+msgstr "&ملف"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:365
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:537
 msgctxt "MainWindowGUI|"
 msgid "&Export"
-msgstr "&Exportovať"
+msgstr "&صدّر"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:366
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:1132
 msgctxt "MainWindowGUI|"
 msgid "Open &Recent"
-msgstr "Otvoriť n&edávne"
+msgstr "افتح ملفاً &حديثًا"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:368
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:553
 msgctxt "MainWindowGUI|"
 msgid "&Edit"
-msgstr "&Upraviť"
+msgstr "&حرّر"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:385
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:548
 msgctxt "MainWindowGUI|"
 msgid "&Settings"
-msgstr "&Nastavenia"
+msgstr "إ&عدادات"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:388
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:508
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:555
 msgctxt "MainWindowGUI|"
 msgid "&Help"
-msgstr "&Pomocník"
+msgstr "م&ساعدة"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:493
 msgctxt "MainWindowGUI|"
 msgid "&New"
-msgstr "&Nový"
+msgstr "&جديد"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:494
 msgctxt "MainWindowGUI|"
 msgid "&Open"
-msgstr "&Otvoriť"
+msgstr "ا&فتح"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:495
 msgctxt "MainWindowGUI|"
 msgid "&Save"
-msgstr "Uložiť"
+msgstr "ا&حفظ"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:496
 msgctxt "MainWindowGUI|"
 msgid "Save &As"
-msgstr "Uložiť ako"
+msgstr "احفظ &كَ‍"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:497
 msgctxt "MainWindowGUI|"
 msgid "Video"
-msgstr "Video"
+msgstr "فيديو"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:498
 msgctxt "MainWindowGUI|"
@@ -677,32 +675,32 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:499
 msgctxt "MainWindowGUI|"
 msgid "&Quit"
-msgstr "&Koniec"
+msgstr "أ&نهِ"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:500
 msgctxt "MainWindowGUI|"
 msgid "&Undo"
-msgstr "&Späť"
+msgstr "ت&راجع"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:501
 msgctxt "MainWindowGUI|"
 msgid "Re&do"
-msgstr "Zn&ovu"
+msgstr "أ&عِد"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:502
 msgctxt "MainWindowGUI|"
 msgid "Cu&t"
-msgstr "Vys&trihnúť"
+msgstr "ق&صّ"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:503
 msgctxt "MainWindowGUI|"
 msgid "&Copy"
-msgstr "&Kopírovať"
+msgstr "ا&نسخ"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:504
 msgctxt "MainWindowGUI|"
 msgid "&Paste"
-msgstr "V&ložiť"
+msgstr "أ&لصق"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:505
 msgctxt "MainWindowGUI|"
@@ -717,17 +715,17 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:507
 msgctxt "MainWindowGUI|"
 msgid "What's &This"
-msgstr "Čo je &to?"
+msgstr "ما &هذا؟"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:509
 msgctxt "MainWindowGUI|"
 msgid "&About"
-msgstr "&O programe"
+msgstr "&عن"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:512
 msgctxt "MainWindowGUI|"
 msgid "Frame number: "
-msgstr ""
+msgstr "رقم الإطار: "
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:514
 msgctxt "MainWindowGUI|"
@@ -742,7 +740,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:576
 msgctxt "MainWindowGUI|"
 msgid "New project"
-msgstr "Nový projekt"
+msgstr "مشروع جديد"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:580
 msgctxt "MainWindowGUI|"
@@ -752,7 +750,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:584
 msgctxt "MainWindowGUI|"
 msgid "Open project"
-msgstr "Otvoriť projekt"
+msgstr "افتح مشروعًا"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:588
 msgctxt "MainWindowGUI|"
@@ -765,7 +763,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:594
 msgctxt "MainWindowGUI|"
 msgid "Save project"
-msgstr "Uloženie projektu"
+msgstr "احفظ المشروع"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:598
 msgctxt "MainWindowGUI|"
@@ -777,7 +775,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:603
 msgctxt "MainWindowGUI|"
 msgid "Save project As"
-msgstr "Uložiť projekt ako"
+msgstr ""
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:607
 msgctxt "MainWindowGUI|"
@@ -801,7 +799,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:625
 msgctxt "MainWindowGUI|"
 msgid "Quit"
-msgstr "Ukončiť"
+msgstr "أنهِ"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:631
 msgctxt "MainWindowGUI|"
@@ -813,7 +811,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:636
 msgctxt "MainWindowGUI|"
 msgid "Undo"
-msgstr "Späť"
+msgstr "تراجع"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:640
 msgctxt "MainWindowGUI|"
@@ -825,7 +823,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:645
 msgctxt "MainWindowGUI|"
 msgid "Redo"
-msgstr "Znovu"
+msgstr "كرّر"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:649
 msgctxt "MainWindowGUI|"
@@ -837,7 +835,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:654
 msgctxt "MainWindowGUI|"
 msgid "Cut"
-msgstr "Vystrihnúť"
+msgstr "قصّ"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:658
 msgctxt "MainWindowGUI|"
@@ -849,7 +847,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:663
 msgctxt "MainWindowGUI|"
 msgid "Copy"
-msgstr "Kopírovať"
+msgstr "انسخ"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:667
 msgctxt "MainWindowGUI|"
@@ -863,7 +861,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:673
 msgctxt "MainWindowGUI|"
 msgid "Paste"
-msgstr "Vložiť"
+msgstr "ألصق"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:677
 msgctxt "MainWindowGUI|"
@@ -899,7 +897,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:702
 msgctxt "MainWindowGUI|"
 msgid "What's This"
-msgstr "Čo je to"
+msgstr "ما هذا"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:706
 msgctxt "MainWindowGUI|"
@@ -911,7 +909,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:710
 msgctxt "MainWindowGUI|"
 msgid "Help"
-msgstr "Pomocník"
+msgstr "مساعدة"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:714
 msgctxt "MainWindowGUI|"
@@ -924,7 +922,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:720
 msgctxt "MainWindowGUI|"
 msgid "About"
-msgstr "O aplikácii"
+msgstr "عن"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:726
 msgctxt "MainWindowGUI|"
@@ -974,7 +972,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:773
 msgctxt "MainWindowGUI|"
 msgid "Unsaved changes"
-msgstr "Neuložené zmeny"
+msgstr "تغييرات غير محفوظة"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:774
 msgctxt "MainWindowGUI|"
@@ -989,13 +987,13 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:876
 msgctxt "MainWindowGUI|"
 msgid "Save As"
-msgstr "Uložiť ako"
+msgstr "احفظ كَ‍"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:903
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:954
 msgctxt "MainWindowGUI|"
 msgid "Warning"
-msgstr "Upozornenie"
+msgstr "تحذير"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:904
 msgctxt "MainWindowGUI|"
@@ -1021,48 +1019,48 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:969
 msgctxt "MainWindowGUI|"
 msgid "Export to file"
-msgstr "Exportovať do súboru"
+msgstr "صدر إلى الملف"
 
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:44
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:123
 msgctxt "PreferencesMenu|"
 msgid "Apply"
-msgstr "Použiť"
+msgstr "طبّق"
 
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:48
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:124
 msgctxt "PreferencesMenu|"
 msgid "Close"
-msgstr "Zavrieť"
+msgstr "أغلق"
 
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:62
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:125
 msgctxt "PreferencesMenu|"
 msgid "Preferences Menu"
-msgstr ""
+msgstr "قائمة التفضيلات"
 
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:78
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:128
 msgctxt "PreferencesMenu|"
 msgid "Video &Import"
-msgstr ""
+msgstr "ا&ستيراد فيديو"
 
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:87
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:129
 msgctxt "PreferencesMenu|"
 msgid "Video &Export"
-msgstr ""
+msgstr "&تصدير فيديو"
 
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:96
 #: src/presentation/frontends/qtfrontend/preferencesmenu.cpp:127
 msgctxt "PreferencesMenu|"
 msgid "Video &Device"
-msgstr "Video zariadenie"
+msgstr "جهاز ال&فيديو"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:86
 msgctxt "QtFrontend|"
 msgid "Please wait..."
-msgstr "Prosím, čakajte..."
+msgstr "فضلًا انتظر..."
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:89
 msgctxt "QtFrontend|"
@@ -1077,7 +1075,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:95
 msgctxt "QtFrontend|"
 msgid "Exporting..."
-msgstr "Exportujem..."
+msgstr "يصدر..."
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:98
 msgctxt "QtFrontend|"
@@ -1092,7 +1090,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:105
 msgctxt "QtFrontend|"
 msgid "Cancel"
-msgstr "Zrušiť"
+msgstr "ألغِ"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:195
 msgctxt "QtFrontend|"
@@ -1203,7 +1201,7 @@ msgstr ""
 #, qt-format
 msgctxt "QtFrontend|"
 msgid "The file %1 could not be opened"
-msgstr "Súbor %1 nie je možné otvoriť"
+msgstr "تعذّر فتح الملف %1"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:371
 msgctxt "QtFrontend|"
@@ -1287,7 +1285,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:420
 msgctxt "QtFrontend|"
 msgid "Warning"
-msgstr "Upozornenie"
+msgstr "تحذير"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:461
 msgctxt "QtFrontend|"
@@ -1300,7 +1298,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:468
 msgctxt "QtFrontend|"
 msgid "Question"
-msgstr "Otázka"
+msgstr "سؤال"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:207
 msgctxt "ToolsMenu|"
@@ -1310,27 +1308,27 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:208
 msgctxt "ToolsMenu|"
 msgid "Number of images:"
-msgstr "Počet obrázkov:"
+msgstr "عدد الصور: "
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:211
 msgctxt "ToolsMenu|"
 msgid "Mix"
-msgstr "Mix"
+msgstr "اخلط"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:212
 msgctxt "ToolsMenu|"
 msgid "Diff"
-msgstr "Diff"
+msgstr "الفرق"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:213
 msgctxt "ToolsMenu|"
 msgid "Playback"
-msgstr "Prehrávanie"
+msgstr "تشغيل"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:214
 msgctxt "ToolsMenu|"
 msgid "Auto"
-msgstr "Auto"
+msgstr "آليّ"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:218
 msgctxt "ToolsMenu|"
@@ -1457,7 +1455,7 @@ msgstr ""
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:399
 msgctxt "ToolsMenu|"
 msgid "Notice"
-msgstr "Poznámka"
+msgstr "0 إخطار"
 
 #: src/presentation/frontends/qtfrontend/toolsmenu.cpp:399
 msgctxt "ToolsMenu|"
@@ -1466,15 +1464,3 @@ msgid ""
 "the preferences menu (CTRL+P) to switch to running the image grabbing as a "
 "daemon."
 msgstr ""
-
-#~ msgctxt "MainWindowGUI|"
-#~ msgid "Abort"
-#~ msgstr "Prerušiť"
-
-#~ msgctxt "MainWindowGUI|"
-#~ msgid "&Yes"
-#~ msgstr "&Áno"
-
-#~ msgctxt "MainWindowGUI|"
-#~ msgid "&No"
-#~ msgstr "Nie"

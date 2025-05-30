@@ -177,7 +177,7 @@ void ToolsMenu::setupUi() {
 
 
 void ToolsMenu::createAccelerators() {
-	loopAccel = new QShortcut(QKeySequence(Qt::ControlModifier + Qt::Key_L), this);
+	loopAccel = new QShortcut(QKeySequence(Qt::ControlModifier | Qt::Key_L), this);
 	connect(loopAccel, SIGNAL(activated()), ui->loopButton, SLOT(toggle()));
 
 	playAccel = new QShortcut(QKeySequence(Qt::Key_K), this);
@@ -399,10 +399,7 @@ void ToolsMenu::changeViewingMode(int index) {
 		QMessageBox::warning(this, tr("Notice"), tr(
 				"Playback only currently works when running the grabber "
 				"as a daemon. Go to the preferences menu (CTRL+P) to switch "
-				"to running the image grabbing as a daemon."),
-				QMessageBox::Ok,
-				QMessageBox::NoButton,
-				QMessageBox::NoButton);
+				"to running the image grabbing as a daemon."));
 		ui->viewChooseCombo->setCurrentIndex(0);
 		cameraHandler->setViewMode(0);
 	}
