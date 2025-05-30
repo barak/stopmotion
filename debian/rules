@@ -1,10 +1,18 @@
 #!/usr/bin/make -f
 
-export QT_SELECT = 5
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
 	dh $@
+
+ifeq (,$(findstring nodebug,$(DEB_BUILD_OPTIONS)))
+    CONFIGURE_ARGS += -DBUILD_TESTING=ON
+else
+    CONFIGURE_ARGS += -DBUILD_TESTING=OFF
+endif
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(CONFIGURE_ARGS)
 
 execute_before_dh_auto_test:
 	$(MAKE) -C obj-* test-stopmotion

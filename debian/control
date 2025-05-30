@@ -7,13 +7,14 @@ Uploaders: Mahyuddin Susanto <udienz@ubuntu.com>,
 Build-Depends: debhelper-compat (= 13),
 	cmake,
 	pkgconf,
-	qtbase5-dev, qttools5-dev-tools,
-	qttools5-dev,
-	qtmultimedia5-dev,
+	qt6-base-dev,
+	qt6-tools-dev,
+	qt6-multimedia-dev,
 	libarchive-dev,
 	libvorbis-dev,
+	libxkbcommon-dev,
 	libxml2-dev
-Standards-Version: 4.7.0
+Standards-Version: 4.7.2
 Rules-Requires-Root: no
 Homepage: https://invent.kde.org/multimedia/stopmotion
 Vcs-Git: https://salsa.debian.org/debian/stopmotion.git
