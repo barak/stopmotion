@@ -1,3 +1,10 @@
+stopmotion (0.9.0-2) UNRELEASED; urgency=medium
+
+  * update scripts and include patch for MUSL library
+  * remove now-unnecessary rules-requires-root:no line
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Fri, 26 Sep 2025 13:27:08 +0100
+
 stopmotion (0.9.0-1) unstable; urgency=medium
 
   * new upstream release

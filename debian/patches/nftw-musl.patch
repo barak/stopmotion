@@ -1,35 +1,36 @@
+From: "Barak A. Pearlmutter" <bap@debian.org>
+Date: Fri, 26 Sep 2025 13:03:15 +0100
+Subject: nftw-musl
+
+This patch allows compilation with the MUSL libc library.
+
+The definition of FTW_ACTIONRETVAL as 0 is a bit sleazy, and is done
+because the only use of that symbol is in a bitwise or, so the
+alternative is to remove it from the or and defining it as 0 has the
+same effect while keeping the patch in one place.
+---
+ src/technical/util.cpp | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+diff --git a/src/technical/util.cpp b/src/technical/util.cpp
+index b977a5f..e44ed11 100644
 --- a/src/technical/util.cpp
 +++ b/src/technical/util.cpp
-@@ -92,18 +92,18 @@ int removeFileOrDirectory(const char *path, const struct stat *,
- 		if (info->level != 0) {
- 			if (0 != rmdir(path)) {
- 				Logger::get().logWarning("Could not remove directory %s", path);
--				return FTW_STOP;
-+				return 1;
- 			}
- 		}
- 		break;
- 	default:
- 		if (0 != unlink(path)) {
- 			Logger::get().logWarning("Could not remove file %s", path);
--			return FTW_STOP;
-+			return 1;
- 		}
- 		break;
- 	}
--	return FTW_CONTINUE;
-+	return 0;
- }
+@@ -36,6 +36,17 @@
+ #include <linux/videodev2.h>
+ #include <new>
  
- }
-@@ -271,8 +271,8 @@ void Util::linkOrCopyFile(const char* newName, const char* oldName) {
++// NFTW MUSL patch:
++#ifndef FTW_STOP
++#define FTW_STOP 1
++#endif
++#ifndef FTW_CONTINUE
++#define FTW_CONTINUE 0
++#endif
++#ifndef FTW_ACTIONRETVAL
++#define FTW_ACTIONRETVAL 0
++#endif
++
+ using namespace std;
  
- bool Util::removeDirectoryContents(const char* path) {
- 	static const int maxDescripotorsToConsume = 8;
--	return FTW_STOP != nftw(path, removeFileOrDirectory,
--			maxDescripotorsToConsume, FTW_PHYS | FTW_DEPTH | FTW_ACTIONRETVAL);
-+	return 1 != nftw(path, removeFileOrDirectory,
-+			maxDescripotorsToConsume, FTW_PHYS | FTW_DEPTH);
- }
- 
- void Util::ensurePathExists(const char* path) {
+ FileLinkException::FileLinkException(const char* message) {
