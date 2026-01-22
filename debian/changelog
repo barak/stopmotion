@@ -4,6 +4,7 @@ stopmotion (0.9.0-2) unstable; urgency=medium
   * remove now-unnecessary rules-requires-root:no line
   * defang false-positive test (closes: #1097941)
   * track upstream translations
+  * bump policy
 
  -- Barak A. Pearlmutter <bap@debian.org>  Thu, 22 Jan 2026 17:57:39 +0000
 
