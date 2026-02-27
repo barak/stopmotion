@@ -1,6 +1,5 @@
 Source: stopmotion
 Section: video
-Priority: optional
 Maintainer: Barak A. Pearlmutter <bap@debian.org>
 Uploaders: Mahyuddin Susanto <udienz@ubuntu.com>,
 	   Bjoern Erik Nilsen <bjoern.nilsen@bjoernen.com>
