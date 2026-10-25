@@ -3,7 +3,7 @@ Section: video
 Maintainer: Barak A. Pearlmutter <bap@debian.org>
 Uploaders: Mahyuddin Susanto <udienz@ubuntu.com>,
 	   Bjoern Erik Nilsen <bjoern.nilsen@bjoernen.com>
-Build-Depends: debhelper-compat (= 13),
+Build-Depends: debhelper-compat (= 14),
 	cmake,
 	pkgconf,
 	qt6-base-dev,
@@ -13,14 +13,13 @@ Build-Depends: debhelper-compat (= 13),
 	libvorbis-dev,
 	libxkbcommon-dev,
 	libxml2-dev
-Standards-Version: 4.7.3
+Standards-Version: 4.7.4
 Homepage: https://invent.kde.org/multimedia/stopmotion
 Vcs-Git: https://salsa.debian.org/debian/stopmotion.git
 Vcs-Browser: https://salsa.debian.org/debian/stopmotion
 
 Package: stopmotion
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: vgrabbj, dvgrab, ffmpeg, uvccapture
 Suggests: gimp
 Description: create stop-motion animations
