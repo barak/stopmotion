@@ -20,7 +20,7 @@ Vcs-Browser: https://salsa.debian.org/debian/stopmotion
 
 Package: stopmotion
 Architecture: any
-Recommends: vgrabbj, dvgrab, ffmpeg, uvccapture
+Recommends: vgrabbj, dvgrab, ffmpeg, uvccapture, procps
 Suggests: gimp
 Description: create stop-motion animations
  Create stop-motion animations with images grabbed from a video
