@@ -1,8 +1,13 @@
-# Eloy Cuadra <ecuadra@eloihr.net>, 2021.
+# Spanish translations for stopmotion_qt.po package.
+# Copyright (C) 2021-2025 This file is copyright:
+# This file is distributed under the same license as the stopmotion package.
+#
+# SPDX-FileCopyrightText: 2021, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: stopmotion_qt\n"
-"PO-Revision-Date: 2021-04-29 19:13+0200\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"PO-Revision-Date: 2025-12-08 12:01+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -448,7 +453,7 @@ msgctxt "ExportTab|"
 msgid "Description"
 msgstr "Descripción"
 
-#: src/presentation/frontends/qtfrontend/framebar/framebar.cpp:196
+#: src/presentation/frontends/qtfrontend/framebar/framebar.cpp:197
 msgctxt "FrameBar|"
 msgid "Frame number: "
 msgstr "Número de fotograma: "
@@ -515,34 +520,34 @@ msgstr ""
 "fotograma.</p><p>Los sonidos se empezarán a reproducir cuando se muestre "
 "este fotograma y se reproducirán hasta que terminen.</p>"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:275
-#: src/presentation/frontends/qtfrontend/frameview.cpp:287
-#: src/presentation/frontends/qtfrontend/frameview.cpp:298
-#: src/presentation/frontends/qtfrontend/frameview.cpp:321
-#: src/presentation/frontends/qtfrontend/frameview.cpp:337
-#: src/presentation/frontends/qtfrontend/frameview.cpp:347
+#: src/presentation/frontends/qtfrontend/frameview.cpp:276
+#: src/presentation/frontends/qtfrontend/frameview.cpp:288
+#: src/presentation/frontends/qtfrontend/frameview.cpp:299
+#: src/presentation/frontends/qtfrontend/frameview.cpp:322
+#: src/presentation/frontends/qtfrontend/frameview.cpp:338
+#: src/presentation/frontends/qtfrontend/frameview.cpp:348
 msgctxt "FrameView|"
 msgid "Warning"
 msgstr "Advertencia"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:275
+#: src/presentation/frontends/qtfrontend/frameview.cpp:276
 msgctxt "FrameView|"
 msgid "No video device selected in the preferences menu."
 msgstr ""
 "No se ha seleccionado ningún dispositivo de vídeo en el menú de preferencias."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:287
+#: src/presentation/frontends/qtfrontend/frameview.cpp:288
 msgctxt "FrameView|"
 msgid "Pre poll command does not exists"
 msgstr "La orden de sondeo previo no existe"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:298
+#: src/presentation/frontends/qtfrontend/frameview.cpp:299
 msgctxt "FrameView|"
 msgid "You do not have the given grabber installed on your system"
 msgstr "La capturadora indicada no está instalada en su sistema"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:321
-#: src/presentation/frontends/qtfrontend/frameview.cpp:337
+#: src/presentation/frontends/qtfrontend/frameview.cpp:322
+#: src/presentation/frontends/qtfrontend/frameview.cpp:338
 msgctxt "FrameView|"
 msgid ""
 "Grabbing failed. This may happen if you try\n"
@@ -553,7 +558,7 @@ msgstr ""
 "capturar de un dispositivo no válido. Compruebe los\n"
 "ajustes de la capturadora en el menú de preferencias."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:347
+#: src/presentation/frontends/qtfrontend/frameview.cpp:348
 msgctxt "FrameView|"
 msgid ""
 "You have to define an image grabber to use.\n"
@@ -1155,12 +1160,12 @@ msgstr "&Dispositivo de vídeo"
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:86
 msgctxt "QtFrontend|"
 msgid "Please wait..."
-msgstr "Por favor, espere..."
+msgstr "Por favor, espere…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:89
 msgctxt "QtFrontend|"
 msgid "Connecting camera..."
-msgstr "Conectando la cámara..."
+msgstr "Conectando la cámara…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:92
 msgctxt "QtFrontend|"
@@ -1170,17 +1175,17 @@ msgstr "Importando fotogramas del disco"
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:95
 msgctxt "QtFrontend|"
 msgid "Exporting..."
-msgstr "Exportando..."
+msgstr "Exportando…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:98
 msgctxt "QtFrontend|"
 msgid "Restoring project..."
-msgstr "Restaurando el proyecto..."
+msgstr "Restaurando el proyecto…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:101
 msgctxt "QtFrontend|"
 msgid "Saving scenes to disk..."
-msgstr "Guardando escenas en el disco..."
+msgstr "Guardando escenas en el disco…"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:105
 msgctxt "QtFrontend|"
@@ -1603,19 +1608,3 @@ msgstr ""
 "La reproducción solo funciona en la actualidad cuando ejecuta la capturadora "
 "como demonio. Vaya al menú de preferencias (Ctrl+P) para cambiar la "
 "ejecución de la capturadora de imágenes como demonio."
-
-#~ msgctxt "MainWindowGUI|"
-#~ msgid "Do&n't save"
-#~ msgstr "&No guardar"
-
-#~ msgctxt "MainWindowGUI|"
-#~ msgid "Abort"
-#~ msgstr "Interrumpir"
-
-#~ msgctxt "MainWindowGUI|"
-#~ msgid "&Yes"
-#~ msgstr "&Sí"
-
-#~ msgctxt "MainWindowGUI|"
-#~ msgid "&No"
-#~ msgstr "&No"

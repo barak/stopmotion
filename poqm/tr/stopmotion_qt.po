@@ -1,9 +1,9 @@
 # Volkan Gezer <volkangezer@gmail.com>, 2021.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022-2024, 2026 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-09-23 15:31+0300\n"
+"PO-Revision-Date: 2026-10-24 21:47+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.11.70\n"
+"X-Generator: Lokalize 26.08.0\n"
 
 #: src/application/externalcommand.cpp:46
 msgctxt "ExternalCommand|"
@@ -220,7 +220,7 @@ msgstr "Rusça"
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:85
 msgctxt "AboutDialog|"
 msgid "Hebrew"
-msgstr "İbranice"
+msgstr "İbrânîce"
 
 #: src/presentation/frontends/qtfrontend/aboutdialog.cpp:87
 msgctxt "AboutDialog|"
@@ -449,7 +449,7 @@ msgctxt "ExportTab|"
 msgid "Description"
 msgstr "Açıklama"
 
-#: src/presentation/frontends/qtfrontend/framebar/framebar.cpp:196
+#: src/presentation/frontends/qtfrontend/framebar/framebar.cpp:197
 msgctxt "FrameBar|"
 msgid "Frame number: "
 msgstr "Kare numarası:"
@@ -516,33 +516,33 @@ msgstr ""
 "gösterir.</p><p>Sesler, kare gösterildiğinde çalmaya başlar ve çalma "
 "bitinceye dek sürer.</p>"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:275
-#: src/presentation/frontends/qtfrontend/frameview.cpp:287
-#: src/presentation/frontends/qtfrontend/frameview.cpp:298
-#: src/presentation/frontends/qtfrontend/frameview.cpp:321
-#: src/presentation/frontends/qtfrontend/frameview.cpp:337
-#: src/presentation/frontends/qtfrontend/frameview.cpp:347
+#: src/presentation/frontends/qtfrontend/frameview.cpp:276
+#: src/presentation/frontends/qtfrontend/frameview.cpp:288
+#: src/presentation/frontends/qtfrontend/frameview.cpp:299
+#: src/presentation/frontends/qtfrontend/frameview.cpp:322
+#: src/presentation/frontends/qtfrontend/frameview.cpp:338
+#: src/presentation/frontends/qtfrontend/frameview.cpp:348
 msgctxt "FrameView|"
 msgid "Warning"
 msgstr "Uyarı"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:275
+#: src/presentation/frontends/qtfrontend/frameview.cpp:276
 msgctxt "FrameView|"
 msgid "No video device selected in the preferences menu."
 msgstr "Tercihler menüsünde seçili video aygıtı yok."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:287
+#: src/presentation/frontends/qtfrontend/frameview.cpp:288
 msgctxt "FrameView|"
 msgid "Pre poll command does not exists"
 msgstr "Önden seçim komutu yok."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:298
+#: src/presentation/frontends/qtfrontend/frameview.cpp:299
 msgctxt "FrameView|"
 msgid "You do not have the given grabber installed on your system"
 msgstr "Sisteminizde verilen yakalayıcı kurulu değil."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:321
-#: src/presentation/frontends/qtfrontend/frameview.cpp:337
+#: src/presentation/frontends/qtfrontend/frameview.cpp:322
+#: src/presentation/frontends/qtfrontend/frameview.cpp:338
 msgctxt "FrameView|"
 msgid ""
 "Grabbing failed. This may happen if you try\n"
@@ -553,7 +553,7 @@ msgstr ""
 "yakalamaya çalıştığınızda olabilir. Tercihler\n"
 "menüsünde yakalayıcı ayarlarınızı denetleyin."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:347
+#: src/presentation/frontends/qtfrontend/frameview.cpp:348
 msgctxt "FrameView|"
 msgid ""
 "You have to define an image grabber to use.\n"
@@ -1026,8 +1026,8 @@ msgid ""
 "etc.</p>"
 msgstr ""
 "<h4>Kare tercihleri menüsü</h4> <p>Bu menüde, seçili kare(ler) için "
-"tercihler belirtebilirsiniz; örneğin <b>altyazılar</b>, <b>ses efektleri</b> "
-"vb. gibi.</p>"
+"tercihler belirtebilirsiniz; örneğin <b>alt yazılar</b>, <b>ses efektleri</"
+"b> vb. gibi.</p>"
 
 #: src/presentation/frontends/qtfrontend/mainwindowgui.cpp:753
 msgctxt "MainWindowGUI|"
@@ -1337,7 +1337,7 @@ msgid ""
 "Failed to get exclusive lock on command.log. Perhaps Stopmotion is already "
 "running."
 msgstr ""
-"command.log üzerinde kilit alınamadı. Stopmotion halihazırda çalışıyor "
+"command.log üzerinde kilit alınamadı. Stopmotion hâlihazırda çalışıyor "
 "olabilir."
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:396

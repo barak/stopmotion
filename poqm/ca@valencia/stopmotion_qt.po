@@ -104,7 +104,7 @@ msgstr "No hi ha cap fotograma actiu per a obrir"
 #: src/application/modelhandler.cpp:247
 msgctxt "ModelHandler|"
 msgid "Failed to start Gimp!"
-msgstr "No s'ha pogut iniciar Gimp!"
+msgstr "Ha fallat mentre s'iniciava Gimp!"
 
 #: src/application/runanimationhandler.cpp:93
 msgctxt "RunAnimationHandler|"
@@ -455,7 +455,7 @@ msgctxt "ExportTab|"
 msgid "Description"
 msgstr "Descripció"
 
-#: src/presentation/frontends/qtfrontend/framebar/framebar.cpp:196
+#: src/presentation/frontends/qtfrontend/framebar/framebar.cpp:197
 msgctxt "FrameBar|"
 msgid "Frame number: "
 msgstr "Número de fotograma: "
@@ -522,34 +522,34 @@ msgstr ""
 "fotograma.</p><p>Els sons començaran la reproducció quan es mostre este "
 "fotograma i es reproduiran fins que finalitzen.</p>"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:275
-#: src/presentation/frontends/qtfrontend/frameview.cpp:287
-#: src/presentation/frontends/qtfrontend/frameview.cpp:298
-#: src/presentation/frontends/qtfrontend/frameview.cpp:321
-#: src/presentation/frontends/qtfrontend/frameview.cpp:337
-#: src/presentation/frontends/qtfrontend/frameview.cpp:347
+#: src/presentation/frontends/qtfrontend/frameview.cpp:276
+#: src/presentation/frontends/qtfrontend/frameview.cpp:288
+#: src/presentation/frontends/qtfrontend/frameview.cpp:299
+#: src/presentation/frontends/qtfrontend/frameview.cpp:322
+#: src/presentation/frontends/qtfrontend/frameview.cpp:338
+#: src/presentation/frontends/qtfrontend/frameview.cpp:348
 msgctxt "FrameView|"
 msgid "Warning"
 msgstr "Avís"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:275
+#: src/presentation/frontends/qtfrontend/frameview.cpp:276
 msgctxt "FrameView|"
 msgid "No video device selected in the preferences menu."
 msgstr ""
 "No s'ha seleccionat cap dispositiu de vídeo en el menú de les preferències."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:287
+#: src/presentation/frontends/qtfrontend/frameview.cpp:288
 msgctxt "FrameView|"
 msgid "Pre poll command does not exists"
 msgstr "No existix l'ordre de presondeig"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:298
+#: src/presentation/frontends/qtfrontend/frameview.cpp:299
 msgctxt "FrameView|"
 msgid "You do not have the given grabber installed on your system"
 msgstr "La capturadora indicada no està instal·lada en este sistema"
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:321
-#: src/presentation/frontends/qtfrontend/frameview.cpp:337
+#: src/presentation/frontends/qtfrontend/frameview.cpp:322
+#: src/presentation/frontends/qtfrontend/frameview.cpp:338
 msgctxt "FrameView|"
 msgid ""
 "Grabbing failed. This may happen if you try\n"
@@ -560,7 +560,7 @@ msgstr ""
 "capturar des d'un dispositiu no vàlid. Comproveu\n"
 "la configuració de la capturadora en el menú de preferències."
 
-#: src/presentation/frontends/qtfrontend/frameview.cpp:347
+#: src/presentation/frontends/qtfrontend/frameview.cpp:348
 msgctxt "FrameView|"
 msgid ""
 "You have to define an image grabber to use.\n"
@@ -1316,13 +1316,13 @@ msgstr "No s'ha pogut copiar el fitxer a l'espai de treball"
 msgctxt "QtFrontend|"
 msgid "Failed to copy the following files to the workspace (~/.stopmotion): %1"
 msgstr ""
-"No s'han pogut copiar els fitxers següents a l'espai de treball (~/."
+"Ha fallat mentre es copiaven els fitxers següents a l'espai de treball (~/."
 "stopmotion): %1"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:376
 msgctxt "QtFrontend|"
 msgid "Failed to initialize audio driver"
-msgstr "No s'ha pogut restablir el controlador d'àudio"
+msgstr "Ha fallat mentre es restablia el controlador d'àudio"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:377
 msgctxt "QtFrontend|"
@@ -1332,7 +1332,7 @@ msgstr "El so no funcionarà fins que açò es corregisca"
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:381
 msgctxt "QtFrontend|"
 msgid "Failed to write preferences"
-msgstr "No s'han pogut escriure les preferències"
+msgstr "Ha fallat mentre s'escrivien les preferències"
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:382
 #, qt-format
@@ -1351,7 +1351,7 @@ msgid ""
 "Failed to get exclusive lock on command.log. Perhaps Stopmotion is already "
 "running."
 msgstr ""
-"No s'ha pogut fer un bloqueig exclusiu sobre «command.log». Potser "
+"Ha fallat mentre es feia un bloqueig exclusiu sobre «command.log». Potser "
 "Stopmotion ja s'està executant."
 
 #: src/presentation/frontends/qtfrontend/qtfrontend.cpp:396
